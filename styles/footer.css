@@ -2,7 +2,7 @@ footer.footer {
     background-color: #050506;
     width: 100%;
     display: grid;
-    grid-template-columns: minmax(200px, 350px) minmax(225px, 400px) minmax(300px, 500px);
+    grid-template-columns: minmax(200px, 370px) minmax(225px, 430px) minmax(300px, 500px);
     padding: 4rem 2rem;
     min-height: 350px;
     color: #949494;
