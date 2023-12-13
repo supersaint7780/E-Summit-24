@@ -1,10 +1,10 @@
 footer.footer {
+    --footer-element-base-font-size:16px;
     background-color: #050506;
     width: 100%;
     display: grid;
-    grid-template-columns: minmax(200px, 370px) minmax(225px, 430px) minmax(300px, 500px);
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 4rem 2rem;
-    min-height: 350px;
     color: #949494;
 }
 
@@ -180,24 +180,4 @@ div.instagram-posts {
 
 div.instagram-post-image {
     display: block;
-}
-
-@media screen and (max-width:1000px) {
-    div.contact-element-text {
-        font-size: 0.875rem;
-    }
-    div.footer-one-contacts {
-        padding-left: 0;
-    }
-    div.footer-one-social {
-        padding-left: 0;
-    }
-    div.footer-two {
-        padding: 1rem 2rem;
-    }
-    div.footer-three-posts {
-        grid-template-columns: repeat(3, 4.75rem);
-        grid-template-rows: repeat(2, 4.75rem);
-        gap: 1.25rem;
-    }
 }
