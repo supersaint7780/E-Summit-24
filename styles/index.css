@@ -74,7 +74,7 @@ body {
     font-size: 1rem;
 }
 
-.join-the-event {
+#join-the-event {
     background: url("../assets/Assets2/neom-sqG2iXx6f2k-unsplash\ 1.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -87,7 +87,7 @@ body {
     padding-bottom: 10rem;
 }
 
-.join-grid {
+#join-grid {
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -183,7 +183,7 @@ body {
     letter-spacing: 0.05313rem;
 }
 
-.join-speakers {
+#join-speakers {
     width: 100%;
     display: flex;
     flex-direction: column;
