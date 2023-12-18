@@ -20,6 +20,8 @@
     box-sizing: border-box;
 }
 
+
+
 a {
     text-decoration: none;
 }
@@ -463,7 +465,6 @@ body {
     letter-spacing: 0.02819rem;
 }
 
-/* .slider-item-info-profile-flex {} */
 
 .swiper-pagination-clickable {
     --swiper-pagination-color: #17F892;
@@ -484,6 +485,141 @@ body {
     --swiper-pagination-bullet-vertical-gap: 2rem;
 }
 
+#time{
+
+    display: flex;
+
+    gap: 30px;
+
+}
+
+#time .circle{
+
+    position: relative;
+
+    width: 150px;
+
+    height: 150px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+#time .circle svg{
+
+    position: relative;
+
+    width: 150px;
+
+    height: 150px;
+
+    transform: rotate(270deg);
+
+}
+
+/* #time .circle svg circle{
+
+    width: 100%;
+
+    height: 100%;
+
+    fill: transparent;
+
+    stroke-linecap: round;
+
+    stroke-width: 8;
+
+    stroke:linear-gradient(90deg, rgba(121,9,62,1) 0%, rgba(72,159,181,1) 100%); 
+
+    transform: translate(5px,5px);
+
+} */
+
+.circle svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-linecap: round;
+    stroke-width: 8;
+    stroke: gray; 
+    transform: translate(5px, 5px);
+}
+
+/* Define the radial gradient using the linearGradient SVG element */
+.circle svg defs {
+    /* stroke: radial-gradient(circle, rgba(172,60,49,1) 0%, rgba(72,159,181,1) 100%);; */
+}
+
+#time .circle svg circle:nth-child(2){
+    stroke: url(#gradient);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+#time div{
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+#time div span{
+    position: absolute;
+    transform: translateX(-50%) translateY(0px);
+    font-size: 0.35em;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+#time .dots{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1000;
+}
+
+#time .dots::before{
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+    background: var(--clr);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--clr),
+    0 0 60px var(--clr);
+}
+
+.newYear{
+    font-size: 8em;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+
+    line-height: 0.6em;
+
+    display: none;
+
+}
+
+.newYear span{
+
+    font-size: 0.5em;
+
+    font-weight: 300;
+
+}
+
 @media screen and (max-width: 850px) {
 
     .join-grid-items,
@@ -498,6 +634,29 @@ body {
         gap: 1rem;
     }
 
+}
+
+.timer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: black;
+}
+
+.timer p{
+    color: white;
+    font-family: Inter;
+    font-size: 2rem;
+}
+
+.timer-flex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+    gap: 1rem;
+    background-color: black;
 }
 
 @media screen and (max-width: 600px) {
