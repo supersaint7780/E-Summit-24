@@ -15,7 +15,7 @@ nav {
   padding: 0.6rem 8rem;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
 height: 6rem;
   position:fixed;
   top: 0;
@@ -38,7 +38,7 @@ ul.nav-menu {
 
 a.link {
   color: #E8E8E8;
-font-family: 'inter';
+  font-family: 'Inter', sans-serif;
 font-size: 1rem;
 font-style: normal;
 font-weight: 500;
