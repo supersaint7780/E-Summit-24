@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Summit 24</title>
     <!-- all stylesheet go here in order of the section-->
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -17,6 +20,65 @@
 </head>
 
 <body>
+    <div id="container">
+        <!-- navbar -->
+        <nav>
+            <a href="https://www.ecellnitb.com" style="
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    "><img id="logo" src="assets/esummit-logo.png" alt="logo"></a>
+
+            <ul class="nav-menu">
+                <li><a class="link" href="#container">HOME</a></li>
+                <li><a class="link" href="#about">ABOUT US</a></li>
+                <li><a class="link" href="#join-grid">EVENTS</a></li>
+                <li><a class="link" href="#join-speakers">SPEAKERS</a></li>
+                <li><a class="link" href="#">SCHEDULE</a></li>
+                <li><a class="link" href="#">WHY ATTEND?</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    
+            </ul>
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+            
+          </nav>
+          <script src="scripts/nav.js"></script>
+          <!-- navbar ends -->
+          <!-- main section -->
+          <section id="main">
+          <h1  data-aos="fade-right" class="heading">Entrepreneurship<br>Summit 2024</h1>
+          <div  data-aos="fade-left" class="content">Central India’s Largest Entrepreneurial Fest, connecting great minds and avenging the conventional. Whatever it takes!</div>
+          <div class="register"><a href="#">Register Now</a></div>
+        </section>
+          <!-- main section ends -->
+    
+        </div>
+    <!-- countdown timer -->
+    <!-- about us section -->
+    <section id="about">
+        <div class="aboutimage">
+            <img src="assets/aboutus.png" alt="aboutus_image">
+        </div>
+        <div class="about-context">
+            <div class="about-heading">ABOUT US</div>
+            <div class="about-innertext1">Entrepreneurship Cell NIT Bhopal is a non-profit student organization that works to support and unleash the budding entrepreneurial minds and promote the start-up culture among the students.</div>
+            <div class="about-innertext2"> E-Summit is the flagship Event of Entrepreneurship Cell MANIT, aimed at fueling the entrepreneurial spirit in the students, held start-up founders, and educating the inquisitive minds to create an innovation driven start-up culture. We aim to bring together the academic community, venture capitalists, new-age entrepreneurs and all those passionate about making a difference to common grounds and to give a chance to the students to exhibit and develop their entrepreneurial talent and creativity through various business related games, workshops, guest lectures and competitions; and to create an environment for everyone to learn and grow.</div>
+            <div class="about-lm"><a href="#">Learn More</a></div>
+        </div>
+        
+    </section>
+     
     <!-- Timer -->
     <section class="timer">
         <p>Countdown Timer</p>
@@ -70,8 +132,9 @@
             </div>
     </section>
     <!-- Timer ends -->
+    
     <!-- Join the event section -->
-    <section class="join-the-event">
+    <section id="join-the-event">
         <div class="join-opa"></div>
         <div class="join-title-sponsor">
             <div data-aos="fade-right" class="join-title-sponsor-content">
@@ -90,7 +153,7 @@
                 </div>
             </div>
         </div>
-        <div class="join-grid">
+        <div id="join-grid">
             <p data-aos="fade-right" class="join-head1">Join Events</p>
             <p data-aos="fade-left" class="join-head2">What’s in the box?</p>
             <div class="join-grid-items">
@@ -177,7 +240,7 @@
     </section>
     <!-- Join the event section ends -->
     <!-- speakers section starts -->
-    <section class="join-speakers">
+    <section id="join-speakers">
         <div class="join-speakers-upimg">
             <img src="./assets/Assets2/image 28.png" alt="" width="100%" height="100%">
         </div>
