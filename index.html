@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/schedule.css">
@@ -71,6 +71,58 @@
     
         </div>
     <!-- countdown timer -->
+    <!-- Timer -->
+    <section class="timer">
+        <p>Countdown Timer</p>
+        <div class="timer-flex">
+        <div id="time">
+            <div class="circle" style="--clr:linear-gradient(90deg, rgba(121,9,62,1) 0%, rgba(72,159,181,1) 100%);">
+                <div class="dots day_dot"></div>
+                
+                <svg>
+                    <defs>
+                    
+                    <radialGradient id="gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" style="stop-color: rgba(121, 9, 62, 1)" />
+                        <stop offset="100%" style="stop-color: rgba(72, 159, 181, 1)" />
+                      </radialGradient>
+
+                    </defs>
+                    <circle cx="70" cy="70" r="70" class="timer-circle" fill="url(#gradient)"></circle>
+                    <circle cx="70" cy="70" r="70" id="dd" class="timer-circle" fill="url(#gradient)"></circle>
+                  </svg>
+                  
+                <div id="days">00<br><span>Days</span></div>
+            </div>
+            <div class="circle" style="--clr:linear-gradient(90deg, rgba(121,9,62,1) 0%, rgba(72,159,181,1) 100%);">
+                <div class="dots hr_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70" class="timer-circle"></circle>
+                    <circle cx="70" cy="70" r="70" id="hh" class="timer-circle"></circle>
+                </svg>
+                <div id="hours">00</div>
+            </div>
+            <div class="circle" style="--clr:linear-gradient(90deg, rgba(121,9,62,1) 0%, rgba(72,159,181,1) 100%);">
+                <div class="dots min_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70" class="timer-circle"></circle>
+                    <circle cx="70" cy="70" r="70" id="mm" class="timer-circle"></circle>
+                </svg>
+                <div id="minutes">00</div>
+            </div>
+            <div class="circle" style="--clr:linear-gradient(90deg, rgba(121,9,62,1) 0%, rgba(72,159,181,1) 100%);">
+                <div class="dots sec_dot"></div>
+                <svg>
+                    <circle cx="70" cy="70" r="70" class="timer-circle"></circle>
+                    <circle cx="70" cy="70" r="70" id="ss" class="timer-circle"></circle>
+                </svg>
+                <div id="seconds">00</div>
+            </div>
+        </div>
+        <h2 class="Esummit">2023<br><span>its Summit 2023</span></h2>
+            </div>
+    </section>
+    <!-- Timer ends -->
     <!-- about us section -->
     <section id="about">
         <div class="aboutimage">
@@ -84,7 +136,7 @@
         </div>
         
     </section>
-    
+     
     
     <!-- Join the event section -->
     <section id="join-the-event">
@@ -1287,8 +1339,13 @@
     </footer>
     <!-- All script tags go here -->
     <script src="index.js"></script>
+    <script src="./scripts/timer.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/canvas-circular-countdown"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="kinetic.js"></script>
+    <script type="text/javascript" src="jquery.final-countdown.js"></script>
     <script>
         AOS.init({
             duration: 1000
@@ -1324,6 +1381,72 @@
 
         });
     </script>
+    <script>
+        $(function() {   
+         $('.countdown').final_countdown({
+                'start': 1362139200,
+                'end': 1388461320,
+                'now': 1387461319        
+            });
+        });
+        </script>
+        <script>
+             let days = document.getElementById('days');
+             let hours = document.getElementById('hours');
+             let minutes = document.getElementById('minutes');
+             let seconds = document.getElementById('seconds');
+
+             let dd = document.getElementById('dd');
+             let hh = document.getElementById('hh');
+             let mm = document.getElementById('mm');
+             let ss = document.getElementById('ss');
+
+             let day_dot = document.querySelector('.day_dot');
+             let hr_dot = document.querySelector('.hr_dot');
+             let min_dot = document.querySelector('.min_dot');
+             let sec_dot = document.querySelector('.sec_dot');
+
+             let endDate = '11/02/2024 00:00:00';
+
+             let x = setInterval(function(){
+             let now = new Date(endDate).getTime();
+             let countDown = new Date().getTime();
+             let distance =  now - countDown;
+
+             let d =365- Math.floor(distance / (1000 * 60 * 60 *24));
+             let h = Math.floor((distance % (1000 * 60 * 60 *24)) / (1000 * 60 * 60));
+             let m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60 ));
+             let s = Math.floor((distance % (1000 * 60 )) / (1000));
+
+             days.innerHTML = d + "<br><span>Days</span>";
+             hours.innerHTML = h + "<br><span>Hours</span>";
+             minutes.innerHTML = m + "<br><span>Minutes</span>";
+             seconds.innerHTML = s + "<br><span>Seconds</span>";
+
+             dd.style.strokeDashoffset = 440 - (440 * d) / 365;
+             hh.style.strokeDashoffset = 440 - (440 * h) / 24;
+             mm.style.strokeDashoffset = 440 - (440 * m) / 60;
+             ss.style.strokeDashoffset = 440 - (440 * s) / 60;
+             day_dot.style.transform = `rotateZ(${d * 0.986}deg`;
+             hr_dot.style.transform = `rotateZ(${h * 15}deg`;
+             min_dot.style.transform = `rotateZ(${m * 6}deg`;
+             sec_dot.style.transform = `rotateZ(${s * 6}deg`;
+             
+             if(distance < 0){
+                clearInterval(x);
+                document.getElementById("time").style.display =
+                'none';
+                document.querySelector(".Esummit").style.display =
+                'block';
+            }
+        }) 
+        let circles=document.querySelectorAll('.timer-circle');
+        circles.forEach(element => {
+            element.setAttribute("cx","70");
+            element.setAttribute("cy","70");
+            element.setAttribute("r","70");
+        });
+        </script>
 </body>
 
 </html>
