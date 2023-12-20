@@ -28,6 +28,9 @@ a {
 
 :root {
     --base-font-size: 16px;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
 }
 
 html {
