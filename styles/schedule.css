@@ -525,12 +525,14 @@ border-radius: 20px;
     width: 2vw;
     border: 0.696369px solid #BBBBBB;
     border-radius: 100%;
+    
    
 }
 .fa-angle-down{
     transition: transform 1s ease;
     position: relative;
     top: 4px;
+    cursor: pointer;
  
 }
 .right-hr{
