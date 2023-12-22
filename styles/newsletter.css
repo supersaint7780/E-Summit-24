@@ -1,5 +1,5 @@
 section.newsletter {
-    --newsletter-font-size:16px;
+    --newsletter-font-size: 16px;
     font-size: var(--newsletter-font-size);
 
     width: 100%;
@@ -9,7 +9,7 @@ section.newsletter {
     padding: 4rem 4rem;
     justify-content: space-between;
 
-    background: linear-gradient(70deg, rgba(255, 255, 255, 0.10) 19.74%, rgba(255, 255, 255, 0.00) 113.46%), url("../assets/newsletter_background.png"), lightgray 0% 0% / 100px 100px repeat;
+    background: linear-gradient(70deg, rgba(255, 255, 255, 0.10) 19.74%, rgba(255, 255, 255, 0.00) 113.46%), url("../assets/newsletter_background.webp"), lightgray 0% 0% / 100px 100px repeat;
     backdrop-filter: blur(50px);
 }
 
@@ -74,5 +74,3 @@ button.newsletter-subscribe-button {
     line-height: normal;
     letter-spacing: 0.03238rem;
 }
-
-
