@@ -110,8 +110,4 @@ span.bar {
     -webkit-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);
   }
-
-  #logo {
-    transform: translateX(0.5rem);
-  }
 }
