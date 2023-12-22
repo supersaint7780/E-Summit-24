@@ -225,4 +225,10 @@ div.instagram-post-image {
         border-right: none;
         padding: 1rem 2rem;
     }
+
+    div.button-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
