@@ -59,7 +59,7 @@ div.hamburger {
 span.bar {
   background-color:#F9A03F;
   display: block;
-  width: 1.5rem;
+  width: 2.5rem;
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
