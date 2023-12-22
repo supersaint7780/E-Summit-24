@@ -1037,7 +1037,7 @@ margin-top: 50px;
         font-size: 10px;
     }
     .event-detail-tl{
-        font-size: 13px;
+        font-size: 12px;
         line-height: 25px;
     }
     .event-name-tl{
@@ -1715,7 +1715,7 @@ margin-top: 50px;
         margin-left: 20px;
         margin-right: 20px;
         line-height: 20px;
-        margin-bottom: 60px;
+        margin-bottom: 35px;
     }
 
     #schedule {
@@ -1756,7 +1756,7 @@ margin-top: 50px;
     }
 
     .event-detail-tl {
-        font-size: 15px;
+        font-size: 13px;
         line-height: 25px;
     }
 
@@ -1808,7 +1808,7 @@ margin-top: 50px;
     .circle-tl {
         height: 5vw;
         width: 5vw;
-        font-size: 4.5vw;
+        font-size: 3.5vw;
     }
 
     .gal-head {
