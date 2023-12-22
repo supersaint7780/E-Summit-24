@@ -687,11 +687,11 @@ body {
 
 @media screen and (max-width: 400px) {
 
-    .join-grid-items,
-    .join-speakers-grid-items {
+    .join-grid-items {
         grid-template-columns: 1fr;
         justify-content: center;
     }
+    
 
     .join-grid-item {
         width: 30rem;
