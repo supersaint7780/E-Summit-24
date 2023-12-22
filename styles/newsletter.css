@@ -74,3 +74,14 @@ button.newsletter-subscribe-button {
     line-height: normal;
     letter-spacing: 0.03238rem;
 }
+
+@media (max-width:600px) {
+    section.newsletter {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    div.newsletter-input-button-area {
+        width: 82.5%;
+    }
+}
