@@ -81,7 +81,7 @@ body {
 }
 
 #join-the-event {
-    background: url("../assets/Assets2/neom-sqG2iXx6f2k-unsplash\ 1.png");
+    background: url("../assets/Assets2/neom-sqG2iXx6f2k-unsplash\ 1.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -338,7 +338,7 @@ body {
 }
 
 .what-people-say {
-    background: url("../assets/Assets2/Group\ 3017.png");
+    background: url("../assets/Assets2/Group\ 3017.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -352,7 +352,7 @@ body {
 }
 
 .what-people-say-content {
-    z-index: 10;
+    z-index: 9;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -417,7 +417,7 @@ body {
 }
 
 /* .slider-content-item { */
-    /* width: 20.25rem;
+/* width: 20.25rem;
     height: 10.05119rem;
     border-radius: 0.04506rem;
     background: rgba(255, 255, 255, 0.05);
@@ -489,7 +489,7 @@ body {
     --swiper-pagination-bullet-vertical-gap: 2rem;
 }
 
-#time{
+#time {
 
     display: flex;
 
@@ -497,7 +497,7 @@ body {
 
 }
 
-#time .circle{
+#time .circle {
 
     position: relative;
 
@@ -513,7 +513,7 @@ body {
 
 }
 
-#time .circle svg{
+#time .circle svg {
 
     position: relative;
 
@@ -549,7 +549,7 @@ body {
     fill: transparent;
     stroke-linecap: round;
     stroke-width: 8;
-    stroke: gray; 
+    stroke: gray;
     transform: translate(5px, 5px);
 }
 
@@ -558,13 +558,13 @@ body {
     /* stroke: radial-gradient(circle, rgba(172,60,49,1) 0%, rgba(72,159,181,1) 100%);; */
 }
 
-#time .circle svg circle:nth-child(2){
+#time .circle svg circle:nth-child(2) {
     stroke: url(#gradient);
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
 }
 
-#time div{
+#time div {
     position: absolute;
     text-align: center;
     color: #fff;
@@ -572,7 +572,7 @@ body {
     font-size: 1.5em;
 }
 
-#time div span{
+#time div span {
     position: absolute;
     transform: translateX(-50%) translateY(0px);
     font-size: 0.35em;
@@ -581,7 +581,7 @@ body {
     letter-spacing: 0.1em;
 }
 
-#time .dots{
+#time .dots {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -592,7 +592,7 @@ body {
     z-index: 1000;
 }
 
-#time .dots::before{
+#time .dots::before {
     content: '';
     position: absolute;
     top: -3px;
@@ -601,10 +601,10 @@ body {
     background: var(--clr);
     border-radius: 50%;
     box-shadow: 0 0 20px var(--clr),
-    0 0 60px var(--clr);
+        0 0 60px var(--clr);
 }
 
-.Esummit{
+.Esummit {
     font-size: 8em;
     font-weight: 500;
     color: #fff;
@@ -616,7 +616,7 @@ body {
 
 }
 
-.Esummit span{
+.Esummit span {
 
     font-size: 0.5em;
 
@@ -640,7 +640,7 @@ body {
 
 }
 
-.timer{
+.timer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -648,13 +648,13 @@ body {
     background-color: black;
 }
 
-.timer p{
+.timer p {
     color: white;
     font-family: Inter;
     font-size: 2rem;
 }
 
-.timer-flex{
+.timer-flex {
     width: 100%;
     display: flex;
     justify-content: center;
