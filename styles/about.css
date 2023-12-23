@@ -11,10 +11,14 @@
     justify-items: flex-end;
     align-items: center;
     background-color: black;
+<<<<<<< HEAD
     box-sizing: border-box;
     background-image: url("../assets/aboutus.webp");
     background-repeat: no-repeat;
     background-size: contain;
+=======
+    overflow: hidden;
+>>>>>>> 45760c7e48164fb2d4c23da8b4b0eea74c0fcd0f
 
 }
 
