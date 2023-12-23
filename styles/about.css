@@ -6,6 +6,7 @@
     justify-items: flex-end;
     align-items: center;
     background-color: black;
+    overflow: hidden;
 
 }
 
