@@ -395,6 +395,10 @@ body {
     letter-spacing: 0.12188rem;
 }
 
+.swiper-2{
+    width: 80%;
+    height: 30rem;
+}
 .swiper {
     width: 100%;
     height: 30rem;
@@ -430,6 +434,9 @@ body {
     border-radius: 0.04506rem;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .slider-item-tri {
@@ -625,7 +632,12 @@ body {
 }
 
 @media screen and (max-width: 850px) {
-
+    #speak-las{
+        transform: translateX(58%);
+    }
+     #grid-las{
+        transform: translateX(58%);
+     }
     .join-grid-items,
     .join-speakers-grid-items {
         grid-template-columns: 1fr 1fr;
@@ -663,12 +675,16 @@ body {
     background-color: black;
 }
 
+#mobile-slid{
+    display: none;
+}
 @media screen and (max-width: 600px) {
 
     .join-grid-items,
     .join-speakers-grid-items {
         grid-template-columns: 1fr 1fr;
         justify-content: center;
+        align-items: center;
     }
 
     .title-sponsor-logo {
@@ -683,17 +699,24 @@ body {
     .swiper {
         height: max-content;
     }
+    #mobile-slid{
+        display: flex;
+    }
+    #desk-slid{
+        display: none;
+    }
 
 }
 
 @media screen and (max-width: 400px) {
-
+    #grid-las{
+        transform: translateX(0);
+     }
     .join-grid-items {
         grid-template-columns: 1fr;
         justify-content: center;
+        align-items: center;
     }
-    
-
     .join-grid-item {
         width: 30rem;
         height: 27rem;
