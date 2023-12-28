@@ -3,20 +3,29 @@
     background: url(/assets/main_bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 54rem;
+    min-height: 50rem;
     width: 100%;
 }
 
 #main {
     width: 100%;
-    height: 48rem;
+    min-height: 48rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 9REM;
+    padding-top: 6rem;
 
+}
+
+div.main-image-container {
+    margin-bottom: 1.5rem;
+}
+img.main-image {
+    display: block;
+    width: 40rem;
+    height: auto;
 }
 
 .heading {
@@ -45,7 +54,7 @@
     line-height: normal;
     letter-spacing: 0.041rem;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 4rem;
 }
 
 .register a {
