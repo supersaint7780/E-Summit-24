@@ -98,7 +98,7 @@ div.video-container {
         width: 80%;
     }
     div.video-container {
-        width: 80%;
+        width: 70%;
         margin-bottom: 6rem;
     }
 }
@@ -108,9 +108,6 @@ div.video-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    .about-context{
-        margin-top: 10rem;
     }
     #about{
         background-size: contain;
