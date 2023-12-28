@@ -345,6 +345,7 @@ body {
 }
 img#lo {
     height: 7rem;
+    width: auto;
 }
 
 .swiper-wrapper{
