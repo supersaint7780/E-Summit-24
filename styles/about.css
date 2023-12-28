@@ -88,6 +88,21 @@ div.video-container {
     padding: 0 4rem;
 }
 
+@media (max-width:850px) {
+    #about {
+        flex-direction: column;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+    .about-context {
+        width: 80%;
+    }
+    div.video-container {
+        width: 80%;
+        margin-bottom: 6rem;
+    }
+}
+
 @media (max-width:750px) {
     .about{
         flex-direction: column;
