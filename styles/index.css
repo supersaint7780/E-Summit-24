@@ -40,19 +40,19 @@ html {
 
 @media screen and (max-width: 1600px) {
     html {
-        font-size: 17px;
+        font-size: 15px;
     }
 }
 
 @media screen and (max-width: 1500px) {
     html {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     html {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -142,7 +142,7 @@ body {
 
 .join-grid-item {
     width: 22rem;
-    height: 24rem;
+    height: 25rem;
     border-radius: 0.625rem;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(15px);
@@ -289,7 +289,7 @@ body {
 .join-title-sponsor-content {
     width: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 5rem 0;
 }
 
@@ -343,7 +343,8 @@ body {
 }
 
 .what-people-say {
-    background: url("../assets/Assets2/Frame\ 61-min.webp");
+    background:url("../assets/what_people_say_bg.webp");
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
