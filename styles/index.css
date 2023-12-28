@@ -252,10 +252,10 @@ body {
 }
 
 .join-speakers-grid-item-head1 {
-    margin-top: 1rem;
+    margin-top: 0.75rem;
     color: #FFF;
     font-family: Inter;
-    font-size: 1.89075rem;
+    font-size: 1.75rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -267,7 +267,7 @@ body {
     color: #9b8f8f;
     text-align: center;
     font-family: Inter;
-    font-size: 1.43238rem;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 500;
     line-height: 1.51263rem;
