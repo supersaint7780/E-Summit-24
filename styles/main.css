@@ -5,7 +5,7 @@
     background-size: cover;
     min-height: 50rem;
     width: 100%;
-    background: center center;
+    background-position: center center;
 }
 
 #main {
