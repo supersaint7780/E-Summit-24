@@ -84,6 +84,7 @@ span.bar {
 
     text-align: center;
     transition: 0.8s;
+    background-color:rgba(4, 7, 13, 0.85) ;
   }
   a.link{
     font-size: 2rem;
