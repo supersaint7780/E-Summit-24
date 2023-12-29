@@ -56,13 +56,19 @@ img.main-image {
 .content {
     color: #E8E8E8;
     font-family: 'Inter Tight', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.041rem;
     text-align: center;
     padding: 1rem 4rem;
+}
+@media (max-width:850px) {
+    .content{
+        font-size: 1.7rem !important;
+        line-height: 2rem !important;
+    }
 }
 
 .register a {
