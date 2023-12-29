@@ -83,7 +83,10 @@ span.bar {
     height: 100vh;
 
     text-align: center;
-    transition: 1.3s;
+    transition: 0.8s;
+  }
+  a.link{
+    font-size: 2rem;
   }
 
 
