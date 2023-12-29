@@ -5,6 +5,7 @@
     background-size: cover;
     min-height: 50rem;
     width: 100%;
+    background: center center;
 }
 
 #main {
@@ -16,7 +17,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 6rem;
-    background: center center;
+    /* background: center center; */
 
 }
 
