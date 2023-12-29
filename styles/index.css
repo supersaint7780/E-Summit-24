@@ -28,6 +28,7 @@ a {
 }
 
 :root {
+    --swiper-navigation-sides-offset: -2px;
     --base-font-size: 16px;
     animation-duration: 2s;
     animation-delay: 2s;
@@ -386,7 +387,7 @@ img#lo {
 
 .what-people-say-content {
     z-index: 9;
-    width: 90%;
+    width: 97%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -724,10 +725,6 @@ img#lo {
     background-color: black;
 }
 
-#mobile-slid{
-    display: none;
-}
-
 
 @media screen and (max-width: 600px) {
 
@@ -745,16 +742,11 @@ img#lo {
     .slider-content {
         flex-direction: column;
         padding: 1rem 0;
+        padding-top: 3rem;
     }
 
     .swiper {
         height: max-content;
-    }
-    #mobile-slid{
-        display: flex;
-    }
-    #desk-slid{
-        display: none;
     }
 
 }
@@ -777,3 +769,8 @@ img#lo {
         height: 27rem;
     }
 }
+
+.swiper-slide {
+    margin-right: 0px !important;
+}
+.hvr-float-shadow{ cursor:auto; }

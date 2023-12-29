@@ -28,3 +28,15 @@ window.addEventListener('scroll', function () {
   }
   lastScrollTop = scrollTop;
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const nav = document.getElementById('nav');
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY < 100) { // Adjust the scroll height as needed (100vh in this case)
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+});
