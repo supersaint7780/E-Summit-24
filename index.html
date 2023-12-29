@@ -1534,13 +1534,11 @@
                 prevEl: '.swiper-button-prev',
             },
 
-            // And if we need scrollbar
-            // scrollbar: {
-            //     el: '.swiper-scrollbar',
-            // },
+
             autoplay: {
                 delay: 5000,
             },
+
 
         });
         const swiper2 = new Swiper('#swiper2', {
@@ -1553,26 +1551,18 @@
             },
             autoplay: {
                 delay: 3000,
+                disableOnInteraction: false,
             },
+            on: {
+                mouseenter: function () {
+                    swiper.autoplay.stop();
+                },
+                mouseleave: function () {
+                    swiper.autoplay.start();
+                },
+            },
+
         });
-    </script>
-    <script>
-        // const arr=document.querySelectorAll('.slider-content-item');
-        // const arr2=document.querySelectorAll('.swiper-slide');
-        // console.log(arr);
-        // console.log(window.innerWidth);
-        // if(window.innerWidth<700){
-        //     arr.forEach(item=>{
-        //         item.classList.add('swiper-slide');
-        //         item.classList.remove('slider-content-item');
-        //         console.log(item);
-        //     })
-        //     alert("hi");
-        //     console.log("hi");
-        //     arr2.forEach(item=>{
-        //         item.classList.remove('swiper-slide')
-        //     })
-        // }
     </script>
 </body>
 
