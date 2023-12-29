@@ -175,7 +175,7 @@ body {
     width: max-content;
     color: #E8E8E8;
     font-family: Inter;
-    font-size: 1.85rem;
+    font-size: 1.45rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -184,7 +184,7 @@ body {
 
 .join-grid-item-content {
     margin-top: 1rem;
-    width: 85%;
+    width: 90%;
     color: #E8E8E8;
     text-align: center;
     font-family: Inter;
@@ -200,6 +200,9 @@ body {
         font-size: 1.3rem;
         width: 80%;
         line-height: 1.7rem;
+    }
+    .join-grid-item-head {
+        font-size: 1.85rem;
     }
 }
 
