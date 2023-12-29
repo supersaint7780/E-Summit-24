@@ -19,6 +19,12 @@
 
 }
 
+@media (max-width:500px) {
+    #main {
+        min-height: 100vh;
+    }
+}
+
 div.main-image-container {
     margin-bottom: 1.5rem;
 }
