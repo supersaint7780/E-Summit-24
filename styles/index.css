@@ -724,9 +724,9 @@ img#lo {
     background-color: black;
 }
 
-#mobile-slid{
+/* #mobile-slid{
     display: none;
-}
+} */
 
 
 @media screen and (max-width: 600px) {
@@ -750,12 +750,12 @@ img#lo {
     .swiper {
         height: max-content;
     }
-    #mobile-slid{
+    /* #mobile-slid{
         display: flex;
     }
     #desk-slid{
         display: none;
-    }
+    } */
 
 }
 
