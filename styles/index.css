@@ -195,6 +195,12 @@ body {
     letter-spacing: 0.05313rem;
 }
 
+@media (max-width:500px) {
+    .join-grid-item-content {
+        font-size: 1.3rem;
+    }
+}
+
 #join-speakers {
     width: 100%;
     display: flex;
