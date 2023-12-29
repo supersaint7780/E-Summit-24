@@ -28,6 +28,7 @@ a {
 }
 
 :root {
+    --swiper-navigation-sides-offset: -2px;
     --base-font-size: 16px;
     animation-duration: 2s;
     animation-delay: 2s;
@@ -386,7 +387,7 @@ img#lo {
 
 .what-people-say-content {
     z-index: 9;
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -776,4 +777,8 @@ img#lo {
         width: 30rem;
         height: 27rem;
     }
+}
+
+.swiper-slide {
+    margin-right: 0px;
 }
