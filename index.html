@@ -1553,15 +1553,15 @@
                 delay: 3000,
                 disableOnInteraction: false,
             },
-            on: {
-                mouseenter: function () {
-                    swiper.autoplay.stop();
-                },
-                mouseleave: function () {
-                    swiper.autoplay.start();
-                },
-            },
+        });
 
+        swiper2.el.addEventListener('mouseenter', function () {
+            swiper2.autoplay.stop();
+        });
+
+        // Resume autoplay when not hovering
+        swiper2.el.addEventListener('mouseleave', function () {
+            swiper2.autoplay.start();
         });
     </script>
 </body>
