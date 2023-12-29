@@ -1,6 +1,6 @@
 section.sponsor {
     width: 100%;
-    background-image: url("../assets/sponsor_background.webp");
+    background-image: url("../assets/sponsor_bg.webp");
     background-size: cover;
 
     display: flex;
@@ -23,7 +23,7 @@ h3.sponsor-part-head-one {
 }
 
 h2.sponsor-part-head-two {
-    color: #464646;
+    color: #929292;
     text-align: center;
     font-family: Inter;
     font-size: 3.5625rem;
