@@ -175,7 +175,7 @@ body {
     width: max-content;
     color: #E8E8E8;
     font-family: Inter;
-    font-size: 1.45rem;
+    font-size: 1.85rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -186,7 +186,7 @@ body {
     margin-top: 1rem;
     width: 90%;
     color: #E8E8E8;
-    text-align: justify;
+    text-align: center;
     font-family: Inter;
     font-size: 1rem;
     font-style: normal;
@@ -198,6 +198,7 @@ body {
 @media (max-width:500px) {
     .join-grid-item-content {
         font-size: 1.3rem;
+        width: 80%;
     }
 }
 
