@@ -81,6 +81,9 @@ html {
 }
 
 
+.content{
+    font-size: 1.7rem !important;
+}
 
 body {
     font-size: 1rem;

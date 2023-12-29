@@ -106,22 +106,62 @@
     <section id="join-the-event">
         <div class="join-opa"></div>
         <div class="join-title-sponsor">
-            <div data-aos="fade-right" class="join-title-sponsor-content">
-                <div class="title-sponsor-content">
-                    <p class="title-sponsor-content-head">OUR TITLE SPONSOR</p>
-                    <p class="title-sponsor-content-con">The Adani Group, headquartered in India, is a diversified
-                        conglomerate with a significant global presence. Founded by Gautam Adani, the group has
-                        established itself as a powerhouse in various sectors, including energy, logistics,
-                        infrastructure, and resources. With a commitment to sustainable development, Adani Group has
-                        played a pivotal role in transforming India's infrastructure landscape, managing and operating
-                        critical ports, power plants, airports, and transmission assets. The conglomerate's foray into
-                        renewable energy and its ambitious projects, such as the development of the Mundra Port and
-                        Special Economic Zone, underscore its commitment to fostering economic growth and contributing
-                        to the nation's progress.</p>
-                    <a class="title-sponsor-content-know" href="https://adani.com/">Know More</a>
-                </div>
-                <div data-aos="fade-left" class="title-sponsor-logo">
-                    <img id="lo" src="./assets/Assets2/Adani_logo_2012 1.webp" alt="">
+            <div id="swiper2" style="overflow-x: hidden;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="join-title-sponsor-content">
+                            <div class="title-sponsor-content">
+                                <p class="title-sponsor-content-head">OUR TITLE SPONSOR</p>
+                                <p class="title-sponsor-content-con">The Adani Group, headquartered in India, is a
+                                    diversified
+                                    conglomerate with a significant global presence. Founded by Gautam Adani, the group
+                                    has
+                                    established itself as a powerhouse in various sectors, including energy, logistics,
+                                    infrastructure, and resources. With a commitment to sustainable development, Adani
+                                    Group has
+                                    played a pivotal role in transforming India's infrastructure landscape, managing and
+                                    operating
+                                    critical ports, power plants, airports, and transmission assets. The conglomerate's
+                                    foray into
+                                    renewable energy and its ambitious projects, such as the development of the Mundra
+                                    Port and
+                                    Special Economic Zone, underscore its commitment to fostering economic growth and
+                                    contributing
+                                    to the nation's progress.</p>
+                                <a class="title-sponsor-content-know" href="https://adani.com/">Know More</a>
+                            </div>
+                            <div class="title-sponsor-logo">
+                                <img id="lo" src="./assets/Assets2/Adani_logo_2012 1.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="join-title-sponsor-content">
+                            <div class="title-sponsor-content">
+                                <p class="title-sponsor-content-head">OUR CO-TITLE SPONSOR</p>
+                                <p class="title-sponsor-content-con">The Adani Group, headquartered in India, is a
+                                    diversified
+                                    conglomerate with a significant global presence. Founded by Gautam Adani, the group
+                                    has
+                                    established itself as a powerhouse in various sectors, including energy, logistics,
+                                    infrastructure, and resources. With a commitment to sustainable development, Adani
+                                    Group has
+                                    played a pivotal role in transforming India's infrastructure landscape, managing and
+                                    operating
+                                    critical ports, power plants, airports, and transmission assets. The conglomerate's
+                                    foray into
+                                    renewable energy and its ambitious projects, such as the development of the Mundra
+                                    Port and
+                                    Special Economic Zone, underscore its commitment to fostering economic growth and
+                                    contributing
+                                    to the nation's progress.</p>
+                                <a class="title-sponsor-content-know" href="https://rupeezy.in/">Know More</a>
+                            </div>
+                            <div class="title-sponsor-logo">
+                                <img id="lo" src="./assets/sponsor/rupeexy.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1790,9 +1830,21 @@
                 el: '.swiper-scrollbar',
             },
             autoplay: {
-                delay: 50000,
+                delay: 5000,
             },
 
+        });
+        const swiper2 = new Swiper('#swiper2', {
+            direction: 'horizontal',
+            loop: true,
+            // Swiper options here
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+            },
         });
     </script>
     <script>
