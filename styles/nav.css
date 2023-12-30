@@ -16,8 +16,9 @@ nav {
   height: 6rem;
   position: fixed;
   top: 0;
-  background: rgba(4, 7, 13, 0.85);
-  backdrop-filter: blur(10px);
+  background: transparent;
+  /* background: rgba(4, 7, 13, 0.85); */
+  /* backdrop-filter: blur(10px); */
   /* background-color: #000000; */
   transition: top 0.7s;
   z-index: 10;
@@ -125,6 +126,6 @@ span.bar {
 }
 
 .scrolled {
-  background: transparent;
-  backdrop-filter: blur(0px);
+  background: rgba(4, 7, 13, 0.85);
+  backdrop-filter: blur(10px);
 }
