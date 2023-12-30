@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-     <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -29,32 +29,30 @@
 
 </head>
 <style>
-    #style-6::-webkit-scrollbar-track
-    {
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    #style-6::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
         background-color: #F5F5F5;
     }
-    
-    #style-6::-webkit-scrollbar
-    {
+
+    #style-6::-webkit-scrollbar {
         width: 10px;
         background-color: #F5F5F5;
     }
-    
-    #style-6::-webkit-scrollbar-thumb
-    {
-        background-color: #F90;	
+
+    #style-6::-webkit-scrollbar-thumb {
+        background-color: #F90;
         border-radius: 5px;
         background-image: -webkit-linear-gradient(45deg,
-                                                  rgba(255, 255, 255, .2) 25%,
-                                                  transparent 25%,
-                                                  transparent 50%,
-                                                  rgba(255, 255, 255, .2) 50%,
-                                                  rgba(255, 255, 255, .2) 75%,
-                                                  transparent 75%,
-                                                  transparent)
+                rgba(255, 255, 255, .2) 25%,
+                transparent 25%,
+                transparent 50%,
+                rgba(255, 255, 255, .2) 50%,
+                rgba(255, 255, 255, .2) 75%,
+                transparent 75%,
+                transparent)
     }
-    </style>
+</style>
+
 <body id="style-6">
     <div id="home">
 
@@ -94,15 +92,17 @@
 
         <section id="main">
             <div data-aos="fade-up" class="main-image-container">
-                <img data-aos="zoom-in-up" class="main-image" src="./assets/entrepreneurship summit.png" alt="event-log" height="300px"
-                    width="612px">
+                <img data-aos="zoom-in-up" class="main-image" src="./assets/entrepreneurship summit.png" alt="event-log"
+                    height="300px" width="612px">
             </div>
             <div data-aos="fade-down" class="content">Central India’s Largest Entrepreneurial Fest, connecting great
                 minds and avenging the conventional. Whatever it takes!</div>
-                <div style="display: flex; gap: 1rem; width: 100%; justify-content: center;">
-            <div class="register" style="padding:0rem;"><a href="#join-grid" style="padding: 1rem 3rem;">Explore</a></div>
-            <div class="register" style="padding:0rem;"><a href="https://expo.ecellnitb.in" style="padding: 1rem 3rem;">Expo Registration</a></div>
-        </div>
+            <div style="display: flex; gap: 1rem; width: 100%; justify-content: center;">
+                <div class="register" style="padding:0rem;"><a href="#join-grid" style="padding: 1rem 3rem;">Explore</a>
+                </div>
+                <div class="register" style="padding:0rem;"><a href="https://expo.ecellnitb.in"
+                        style="padding: 1rem 3rem;">Expo Registration</a></div>
+            </div>
         </section>
         <style>
             .circleGauge {
@@ -117,7 +117,7 @@
                 transform: rotate(-90deg);
                 transition: 1s;
             }
-    
+
             .circleFull {
                 fill: none;
                 stroke: url(#GradientColor);
@@ -126,13 +126,13 @@
                 transform-origin: center;
                 transform: rotate(-90deg);
             }
-    
+
             @keyframes anim {
                 100% {
                     stroke-dashoffset: 14.75rem;
                 }
             }
-    
+
             .timerDigits {
                 font-family: 'Inter';
                 font-style: normal;
@@ -142,7 +142,7 @@
                 letter-spacing: 0.03em;
                 fill: #FFFFFF;
             }
-    
+
             .timerCaptions {
                 font-family: 'Inter';
                 font-style: normal;
@@ -152,16 +152,18 @@
                 letter-spacing: 0.03em;
                 fill: #E8E8E8;
             }
+
             @media only screen and (min-width: 400px) and (max-width: 500px) {
-        .timercontainer {
-            transform: scale(0.8);
-        }
-    }
-        @media only screen and (min-width: 300px) and (max-width: 400px) {
-        .timercontainer {
-            transform: scale(0.75);
-        }
-    }
+                .timercontainer {
+                    transform: scale(0.8);
+                }
+            }
+
+            @media only screen and (min-width: 300px) and (max-width: 400px) {
+                .timercontainer {
+                    transform: scale(0.75);
+                }
+            }
         </style>
         <section style="
     display: flex;
@@ -185,8 +187,8 @@
     display: block;
     margin-bottom: 2.5625rem;
     ">Counting down to E-Summit '24</div>
-    <div class="timercontainer">
-            <svg id="timerContainer" xmlns="http://www.w3.org/2000/svg" version="1.1" style="
+            <div class="timercontainer">
+                <svg id="timerContainer" xmlns="http://www.w3.org/2000/svg" version="1.1" style="
         display: block;
         /* overflow: visible; */
         height: 12.6875rem;
@@ -194,34 +196,38 @@
         /* margin-right: auto; */
         width: 47.3125rem;
         ">
-                <defs>
-                    <linearGradient id="GradientColor">
-                        <stop offset="0%" stop-color="#AC3931"></stop>
-                        <stop offset="100%" stop-color="#489FB5"></stop>
-                    </linearGradient>
-                </defs>
-                <circle class="circleGauge" id="daysGauge" stroke-linecap="round" style="cx:5rem;cy:5rem;r:4.375rem;">
-                </circle>
-                <circle class="circleFull" stroke-linecap="round" style="cx:5rem;cy:5rem;r:4.375rem;"></circle>
-                <text x="2.8rem" y="6.3rem" id="days" class="timerDigits">07</text>
-                <text x="3.4rem" y="12.5rem" class="timerCaptions">Days</text>
-                <circle class=" circleGauge" id="hrsGauge" stroke-linecap="round" style="cx:17.5rem;cy:5rem;r:4.375rem;">
-                </circle>
-                <circle class="circleFull" stroke-linecap="round" style="cx:17.5rem;cy:5rem;r:4.375rem;"></circle>
-                <text x="15.5rem" y="6.3rem" id="hrs" class="timerDigits">28</text>
-                <text x="15.6rem" y="12.5rem" class="timerCaptions">Hours</text>
-                <circle class=" circleGauge" id="minsGauge" stroke-linecap="round" style="cx:30rem;cy:5rem;r:4.375rem;">
-                </circle>
-                <circle class="circleFull" stroke-linecap="round" style="cx:30rem;cy:5rem;r:4.375rem;"></circle>
-                <text x="28.0rem" y="6.3rem" id="mins" class="timerDigits">60</text>
-                <text x="27.4rem" y="12.5rem" class="timerCaptions">Minutes</text>
-                <circle class=" circleGauge" id="secsGauge" stroke-linecap="round" style="cx:42.4rem;cy:5rem;r:4.375rem;">
-                </circle>
-                <circle class="circleFull" stroke-linecap="round" style="cx:42.5rem;cy:5rem;r:4.375rem;"></circle>
-                <text x="40.45rem" y="6.3rem" id="secs" class="timerDigits">10</text>
-                <text x="39.9rem" y="12.5rem" class="timerCaptions">Seconds</text>
-            </svg>
-        </div>
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#AC3931"></stop>
+                            <stop offset="100%" stop-color="#489FB5"></stop>
+                        </linearGradient>
+                    </defs>
+                    <circle class="circleGauge" id="daysGauge" stroke-linecap="round"
+                        style="cx:5rem;cy:5rem;r:4.375rem;">
+                    </circle>
+                    <circle class="circleFull" stroke-linecap="round" style="cx:5rem;cy:5rem;r:4.375rem;"></circle>
+                    <text x="2.8rem" y="6.3rem" id="days" class="timerDigits">07</text>
+                    <text x="3.4rem" y="12.5rem" class="timerCaptions">Days</text>
+                    <circle class=" circleGauge" id="hrsGauge" stroke-linecap="round"
+                        style="cx:17.5rem;cy:5rem;r:4.375rem;">
+                    </circle>
+                    <circle class="circleFull" stroke-linecap="round" style="cx:17.5rem;cy:5rem;r:4.375rem;"></circle>
+                    <text x="15.5rem" y="6.3rem" id="hrs" class="timerDigits">28</text>
+                    <text x="15.6rem" y="12.5rem" class="timerCaptions">Hours</text>
+                    <circle class=" circleGauge" id="minsGauge" stroke-linecap="round"
+                        style="cx:30rem;cy:5rem;r:4.375rem;">
+                    </circle>
+                    <circle class="circleFull" stroke-linecap="round" style="cx:30rem;cy:5rem;r:4.375rem;"></circle>
+                    <text x="28.0rem" y="6.3rem" id="mins" class="timerDigits">60</text>
+                    <text x="27.4rem" y="12.5rem" class="timerCaptions">Minutes</text>
+                    <circle class=" circleGauge" id="secsGauge" stroke-linecap="round"
+                        style="cx:42.4rem;cy:5rem;r:4.375rem;">
+                    </circle>
+                    <circle class="circleFull" stroke-linecap="round" style="cx:42.5rem;cy:5rem;r:4.375rem;"></circle>
+                    <text x="40.45rem" y="6.3rem" id="secs" class="timerDigits">10</text>
+                    <text x="39.9rem" y="12.5rem" class="timerCaptions">Seconds</text>
+                </svg>
+            </div>
         </section>
         <script>
             // Set the date we're counting down to
@@ -253,7 +259,7 @@
         </script>
     </div>
     </div>
-   
+
     <section id="about">
         <div class="video-container">
             <iframe class="video-frame" width="560" height="315"
@@ -490,8 +496,8 @@
                             <p class="join-speakers-grid-item-head2">The Wanderers Hub</p>
                         </div>
                     </a>
-                    
-                    
+
+
                     <a href="#" class="hvr-float-shadow aos-init">
                         <div class="join-speakers-grid-item">
                             <div class="join-speakers-grid-item-img">
@@ -557,7 +563,7 @@
                             <p class="join-speakers-grid-item-head2">Ex SWE Google | 390k+ YT | TedX</p>
                         </div>
                     </a>
-                    
+
                     <a href="#" class="hvr-float-shadow aos-init">
                         <div class="join-speakers-grid-item">
                             <div class="join-speakers-grid-item-img">
@@ -576,8 +582,8 @@
                             <p class="join-speakers-grid-item-head2">Standup Comedian</p>
                         </div>
                     </a>
-                    
-                    
+
+
                     <a href="#" class="hvr-float-shadow ">
                         <div class="join-speakers-grid-item">
                             <div class="join-speakers-grid-item-img">
@@ -606,7 +612,7 @@
                         </div>
                     </a>
 
-                    
+
 
                     <a href="#" class="hvr-float-shadow aos-init">
                         <div class="join-speakers-grid-item">
@@ -1376,63 +1382,82 @@
                 support powers the success of our e-summit experience.</p>
             <div class="sponsor-image-container">
                 <div class="sponsor-image-wrapper">
-                    <a href="https://www.adani.com/"><img src="./assets/sponsor/adani.webp" alt="Sponsor" class="sponsor-image"></a>
+                    <a href="https://www.adani.com/"><img src="./assets/sponsor/adani.webp" alt="Sponsor"
+                            class="sponsor-image"></a>
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://rupeezy.in/"><img src="./assets/sponsor/rupeexy.webp" alt="Sponsor" class="sponsor-image"></a>
+                    <a href="https://rupeezy.in/"><img src="./assets/sponsor/rupeexy.webp" alt="Sponsor"
+                            class="sponsor-image"></a>
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://bhopalangels.com/"><img src="./assets/sponsor/bhopal_angels.webp" alt="Sponsor" class="sponsor-image"></a>
-                        
+                    <a href="https://bhopalangels.com/"><img src="./assets/sponsor/bhopal_angels.webp" alt="Sponsor"
+                            class="sponsor-image"></a>
+
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://aws.amazon.com/free/?gclid=Cj0KCQiA1rSsBhDHARIsANB4EJY0bGmloslMy81LQFkrUL0lfh-8wxcPyyt4wAj1DBF4uvhn7-19soQaAjx2EALw_wcB&trk=14a4002d-4936-4343-8211-b5a150ca592b&sc_channel=ps&ef_id=Cj0KCQiA1rSsBhDHARIsANB4EJY0bGmloslMy81LQFkrUL0lfh-8wxcPyyt4wAj1DBF4uvhn7-19soQaAjx2EALw_wcB:G:s&s_kwcid=AL!4422!3!453325184782!e!!g!!aws!10712784856!111477279771&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all"><img src="./assets/sponsor/aws.webp" alt="Sponsor" class="sponsor-image"></a>
+                    <a
+                        href="https://aws.amazon.com/free/?gclid=Cj0KCQiA1rSsBhDHARIsANB4EJY0bGmloslMy81LQFkrUL0lfh-8wxcPyyt4wAj1DBF4uvhn7-19soQaAjx2EALw_wcB&trk=14a4002d-4936-4343-8211-b5a150ca592b&sc_channel=ps&ef_id=Cj0KCQiA1rSsBhDHARIsANB4EJY0bGmloslMy81LQFkrUL0lfh-8wxcPyyt4wAj1DBF4uvhn7-19soQaAjx2EALw_wcB:G:s&s_kwcid=AL!4422!3!453325184782!e!!g!!aws!10712784856!111477279771&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all"><img
+                            src="./assets/sponsor/aws.webp" alt="Sponsor" class="sponsor-image"></a>
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://givemycertificate.com/"><img src="./assets/sponsor/arrow.webp" alt="Sponsor" class="sponsor-image" style="scale: 0.75;"></a>
+                    <a href="https://givemycertificate.com/"><img src="./assets/sponsor/arrow.webp" alt="Sponsor"
+                            class="sponsor-image" style="scale: 0.75;"></a>
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://www.canva.com/"><img src="./assets/sponsor/canva.webp" alt="Sponsor" class="sponsor-image" style="scale: 0.75;"></a>
+                    <a href="https://www.canva.com/"><img src="./assets/sponsor/canva.webp" alt="Sponsor"
+                            class="sponsor-image" style="scale: 0.75;"></a>
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://www.icreate.org.in/"><img src="./assets/sponsor/icreate.webp" alt="Sponsor" class="sponsor-image"></a>
+                    <a href="https://www.icreate.org.in/"><img src="./assets/sponsor/icreate.webp" alt="Sponsor"
+                            class="sponsor-image"></a>
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://www.jiosaavn.com/"><img src="./assets/sponsor/jiosaavn.webp" alt="Sponsor" class="sponsor-image"></a>
+                    <a href="https://www.jiosaavn.com/"><img src="./assets/sponsor/jiosaavn.webp" alt="Sponsor"
+                            class="sponsor-image"></a>
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://kitablovers.com/"><img src="./assets/sponsor/kitab_lovers.webp" alt="Sponsor" class="sponsor-image"></a>
+                    <a href="https://kitablovers.com/"><img src="./assets/sponsor/kitab_lovers.webp" alt="Sponsor"
+                            class="sponsor-image"></a>
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://msg91.com/"><img src="./assets/sponsor/msg91.webp" alt="Sponsor" class="sponsor-image"></a>
+                    <a href="https://msg91.com/"><img src="./assets/sponsor/msg91.webp" alt="Sponsor"
+                            class="sponsor-image"></a>
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://papertrade.live/"><img src="./assets/sponsor/papertrade.webp" alt="Sponsor" class="sponsor-image"
-                        style="scale: 0.75;"></a>
+                    <a href="https://papertrade.live/"><img src="./assets/sponsor/papertrade.webp" alt="Sponsor"
+                            class="sponsor-image" style="scale: 0.75;"></a>
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://recklabs.com/"><img src="./assets/sponsor/RECKLABS.webp" alt="Sponsor" class="sponsor-image"></a>
+                    <a href="https://recklabs.com/"><img src="./assets/sponsor/RECKLABS.webp" alt="Sponsor"
+                            class="sponsor-image"></a>
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://startupvisors.com/"><img src="./assets/sponsor/startupvisors.webp" alt="Sponsor" class="sponsor-image"></a>
+                    <a href="https://startupvisors.com/"><img src="./assets/sponsor/startupvisors.webp" alt="Sponsor"
+                            class="sponsor-image"></a>
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://www.taskade.com/"><img src="./assets/sponsor/taskade.webp" alt="Sponsor" class="sponsor-image"></a>
+                    <a href="https://www.taskade.com/"><img src="./assets/sponsor/taskade.webp" alt="Sponsor"
+                            class="sponsor-image"></a>
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://teachnook.com/"><img src="./assets/sponsor/teachnook.webp" alt="Sponsor" class="sponsor-image"></a>
+                    <a href="https://teachnook.com/"><img src="./assets/sponsor/teachnook.webp" alt="Sponsor"
+                            class="sponsor-image"></a>
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://techstory.in/"><img src="./assets/sponsor/techstory.webp" alt="Sponsor" class="sponsor-image"></a>
+                    <a href="https://techstory.in/"><img src="./assets/sponsor/techstory.webp" alt="Sponsor"
+                            class="sponsor-image"></a>
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://unstop.com/"><img src="./assets/sponsor/unstop.webp" alt="Sponsor" class="sponsor-image" style="scale: 0.75;"></a>
+                    <a href="https://unstop.com/"><img src="./assets/sponsor/unstop.webp" alt="Sponsor"
+                            class="sponsor-image" style="scale: 0.75;"></a>
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://www.wolframalpha.com/"><img src="./assets/sponsor/wolfram_research.webp" alt="Sponsor" class="sponsor-image"></a>
+                    <a href="https://www.wolframalpha.com/"><img src="./assets/sponsor/wolfram_research.webp"
+                            alt="Sponsor" class="sponsor-image"></a>
                 </div>
                 <div class="sponsor-image-wrapper">
-                    <a href="https://sixthsenseit.com/"><img src="./assets/sponsor/sixthsenselogo.webp" alt="Sponsor" class="sponsor-image"></a>
+                    <a href="https://sixthsenseit.com/"><img src="./assets/sponsor/sixthsenselogo.webp" alt="Sponsor"
+                            class="sponsor-image"></a>
                 </div>
                 <!-- <div class="sponsor-image-wrapper">
                     <img src="#" alt="Sponsor" class="sponsor-image">
@@ -1581,7 +1606,7 @@
     </section>
     <!-- sponsort and partner section ends -->
     <div style="width: 100vw; overflow-x: hidden;">
-    <section id="mediacoverage" class="marquee2" style="
+        <section id="mediacoverage" class="marquee2" style="
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1589,13 +1614,13 @@
     width: max-content;
     height: 87vh;
 ">
-        <img src="https://res.cloudinary.com/djjbjnrgl/image/upload/v1703884090/m1_tzkvxj.jpg" alt=""
-            style="height: inherit;">
-        <img src="https://res.cloudinary.com/djjbjnrgl/image/upload/v1703884089/m2_uqayja.jpg" alt="" style="
+            <img src="https://res.cloudinary.com/djjbjnrgl/image/upload/v1703884090/m1_tzkvxj.jpg" alt=""
+                style="height: inherit;">
+            <img src="https://res.cloudinary.com/djjbjnrgl/image/upload/v1703884089/m2_uqayja.jpg" alt="" style="
     height: inherit;
 ">
-    </section>
-</div>
+        </section>
+    </div>
     <style>
         body {
             overflow-x: hidden;
@@ -1639,9 +1664,10 @@
             height: 100%;
             display: flex;
         ">
-            <input type="text" style="flex-grow:1;" placeholder="Enter Your E-Mail" id="subs-email" class="newsletter-email-input">
-            <button class="newsletter-subscribe-button" type="submit">Subscribe</button>
-        </form>
+                <input type="text" style="flex-grow:1;" placeholder="Enter Your E-Mail" id="subs-email"
+                    class="newsletter-email-input">
+                <button class="newsletter-subscribe-button" type="submit">Subscribe</button>
+            </form>
         </div>
     </section>
     <!-- newsletter section end -->
@@ -1692,7 +1718,7 @@
 
         <div class="footer-two">
             <h2 class="footer-head footer-two-head">Write to us</h2>
-            <form class="footer-form" id="fotform" >
+            <form class="footer-form" id="fotform">
                 <div class="footer-input">
                     <input type="text" name="name" id="foot-name" placeholder="Full Name">
                 </div>
@@ -1713,22 +1739,34 @@
             <h2 class="footer-head footer-three-head">Instagram Feed</h2>
             <div class="footer-three-posts">
                 <div class="instagram-posts">
-                    <!-- <img src="" alt="E-Cell-Post" class="instagram-post-image"> -->
+                    <a href="https://www.instagram.com/p/C1CJxQRN4Ho/">
+                        <img src="./assets/posts/startupexpo.webp" alt="E-Cell-Post" class="instagram-post-image">
+                    </a>
                 </div>
                 <div class="instagram-posts">
-                    <!-- <img src="" alt="E-Cell-Post" class="instagram-post-image"> -->
+                    <a href="https://www.instagram.com/p/C1EZxYyNsfk/">
+                        <img src="./assets/posts/Bplan.webp" alt="E-Cell-Post" class="instagram-post-image">
+                    </a>
                 </div>
                 <div class="instagram-posts">
-                    <!-- <img src="" alt="E-Cell-Post" class="instagram-post-image"> -->
+                    <a href="https://www.instagram.com/p/C1MqiRgNBd8/">
+                        <img src="./assets/posts/creatorscamp.webp" alt="E-Cell-Post" class="instagram-post-image">
+                    </a>
                 </div>
                 <div class="instagram-posts">
-                    <!-- <img src="" alt="E-Cell-Post" class="instagram-post-image"> -->
+                    <a href="https://www.instagram.com/p/C1HVWKzthMW/">
+                        <img src="./assets/posts/hackathon.webp" alt="E-Cell-Post" class="instagram-post-image">
+                    </a>
                 </div>
                 <div class="instagram-posts">
-                    <!-- <img src="" alt="E-Cell-Post" class="instagram-post-image"> -->
+                    <a href="https://www.instagram.com/p/C1RumWzNaTt/">
+                        <img src="./assets/posts/case.webp" alt="E-Cell-Post" class="instagram-post-image">
+                    </a>
                 </div>
                 <div class="instagram-posts">
-                    <!-- <img src="" alt="E-Cell-Post" class="instagram-post-image"> -->
+                    <a href="https://www.instagram.com/p/C1OhHRHNaJz/">
+                        <img src="./assets/posts/IPL.webp" alt="E-Cell-Post" class="instagram-post-image">
+                    </a>
                 </div>
             </div>
         </div>
@@ -1894,7 +1932,7 @@
             element.setAttribute("r","70");
         });
         </script> -->
-        <script src="./scripts/submit.js"></script>
+    <script src="./scripts/submit.js"></script>
 </body>
 
 </html>
