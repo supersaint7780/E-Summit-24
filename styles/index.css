@@ -783,3 +783,10 @@ img#lo {
     margin-right: 0px !important;
 }
 .hvr-float-shadow{ cursor:auto; }
+
+.card-float {
+    transition: all ease-in-out 0.2s;   
+}
+.card-float:hover {
+    transform: translateY(-7px);
+}
