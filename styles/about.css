@@ -88,10 +88,12 @@ div.video-container {
     padding: 0 4rem;
 }
 
+
 @media (max-width:850px) {
     #about {
         flex-direction: column;
-        padding-top: 8rem;
+        /* padding-top: 8rem; */
+        padding-top: 0;
         padding-bottom: 8rem;
     }
     .about-context {

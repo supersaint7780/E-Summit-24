@@ -204,7 +204,7 @@ body {
     letter-spacing: 0.05313rem;
 }
 
-@media (max-width:700px) {
+@media (max-width:500px) {
     .join-grid-item-content {
         font-size: 1.3rem;
         width: 80%;
@@ -760,7 +760,7 @@ img#lo {
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     #lo{
         width: 100%;
         height: 100%;
