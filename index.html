@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/cf853307e4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
+    <link rel="shortcut icon" href="./3000 PX Ecell logo 1.png" type="image/x-icon">
 
 </head>
 <style>
@@ -102,7 +102,153 @@
             <div class="register" style="padding:0rem;"><a href="https://expo.ecellnitb.in" style="padding: 1rem 3rem;">Expo Registration</a></div>
         </div>
         </section>
-        
+        <style>
+            .circleGauge {
+                fill: none;
+                stroke: url(#GradientColor);
+                stroke-width: 0.5rem;
+                stroke-dasharray: 29.5rem;
+                /* stroke-dashoffset: 29.5rem; */
+                /* animation: anim 2s linear forwards; */
+                transform-box: fill-box;
+                transform-origin: center;
+                transform: rotate(-90deg);
+            }
+    
+            .circleFull {
+                fill: none;
+                stroke: url(#GradientColor);
+                stroke-width: 0.125rem;
+                transform-box: fill-box;
+                transform-origin: center;
+                transform: rotate(-90deg);
+            }
+    
+            @keyframes anim {
+                100% {
+                    stroke-dashoffset: 14.75rem;
+                }
+            }
+    
+            .timerDigits {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 100;
+                font-size: 3.2934rem;
+                line-height: 4rem;
+                letter-spacing: 0.03em;
+                fill: #FFFFFF;
+            }
+    
+            .timerCaptions {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 1.375rem;
+                line-height: 1.6875rem;
+                letter-spacing: 0.03em;
+                fill: #E8E8E8;
+            }
+            @media only screen and (min-width: 400px) and (max-width: 500px) {
+        .timercontainer {
+            transform: scale(0.8);
+        }
+    }
+        @media only screen and (min-width: 300px) and (max-width: 400px) {
+        .timercontainer {
+            transform: scale(0.6);
+        }
+    }
+        </style>
+        <section style="
+    display: flex;
+    padding: 3rem 0;
+    width: 100vw;
+    height: 23.375rem;
+    background: linear-gradient(180deg, #1A1707 0%, rgba(0, 0, 0, 0.98) 100%);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    ">
+            <div style="
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6928rem;
+    line-height: 2.0625rem;
+    letter-spacing: 0.03em;
+    color: #E8E8E8;
+    display: block;
+    margin-bottom: 2.5625rem;
+    ">COUNTDOWN TIMER</div>
+    <div class="timercontainer">
+            <svg id="timerContainer" xmlns="http://www.w3.org/2000/svg" version="1.1" style="
+        display: block;
+        /* overflow: visible; */
+        height: 12.6875rem;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        width: 47.3125rem;
+        ">
+                <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#AC3931"></stop>
+                        <stop offset="100%" stop-color="#489FB5"></stop>
+                    </linearGradient>
+                </defs>
+                <circle class="circleGauge" id="daysGauge" stroke-linecap="round" style="cx:5rem;cy:5rem;r:4.375rem;">
+                </circle>
+                <circle class="circleFull" stroke-linecap="round" style="cx:5rem;cy:5rem;r:4.375rem;"></circle>
+                <text x="2.8rem" y="6.3rem" id="days" class="timerDigits">07</text>
+                <text x="3.4rem" y="12.5rem" class="timerCaptions">Days</text>
+                <circle class=" circleGauge" id="hrsGauge" stroke-linecap="round" style="cx:17.5rem;cy:5rem;r:4.375rem;">
+                </circle>
+                <circle class="circleFull" stroke-linecap="round" style="cx:17.5rem;cy:5rem;r:4.375rem;"></circle>
+                <text x="15.5rem" y="6.3rem" id="hrs" class="timerDigits">28</text>
+                <text x="15.6rem" y="12.5rem" class="timerCaptions">Hours</text>
+                <circle class=" circleGauge" id="minsGauge" stroke-linecap="round" style="cx:30rem;cy:5rem;r:4.375rem;">
+                </circle>
+                <circle class="circleFull" stroke-linecap="round" style="cx:30rem;cy:5rem;r:4.375rem;"></circle>
+                <text x="28.0rem" y="6.3rem" id="mins" class="timerDigits">60</text>
+                <text x="27.4rem" y="12.5rem" class="timerCaptions">Minutes</text>
+                <circle class=" circleGauge" id="secsGauge" stroke-linecap="round" style="cx:42.4rem;cy:5rem;r:4.375rem;">
+                </circle>
+                <circle class="circleFull" stroke-linecap="round" style="cx:42.5rem;cy:5rem;r:4.375rem;"></circle>
+                <text x="40.45rem" y="6.3rem" id="secs" class="timerDigits">10</text>
+                <text x="39.9rem" y="12.5rem" class="timerCaptions">Seconds</text>
+            </svg>
+        </div>
+        </section>
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Feb 11, 2024 00:00:00").getTime();
+            // Update the count down every 1 second
+            var x = setInterval(function () {
+                // Get today's date and time
+                var now = new Date().getTime();
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+                // Time calculations for days, hours, minutes and seconds
+                var d = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var s = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById("days").innerHTML = (d.toString().length == 1) ? "0" + d.toString() : d;
+                document.getElementById("hrs").innerHTML = (h.toString().length == 1) ? "0" + h.toString() : h;
+                document.getElementById("mins").innerHTML = (m.toString().length == 1) ? "0" + m.toString() : m;
+                document.getElementById("secs").innerHTML = (s.toString().length == 1) ? "0" + s.toString() : s;
+                document.getElementById("secsGauge").setAttribute("stroke-dashoffset", (((30 - d) / 30) * 29.5) + "rem");
+                document.getElementById("hrsGauge").setAttribute("stroke-dashoffset", (((24 - h) / 24) * 29.5) + "rem");
+                document.getElementById("minsGauge").setAttribute("stroke-dashoffset", (((60 - m) / 60) * 29.5) + "rem");
+                document.getElementById("secsGauge").setAttribute("stroke-dashoffset", (((60 - s) / 60) * 29.5) + "rem");
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                }
+            }, 1000);
+        </script>
+    </div>
     </div>
    
     <section id="about">
