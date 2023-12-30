@@ -2,7 +2,7 @@ section.sponsor {
     width: 100%;
     background-image: url("../assets/sponsor_bg.webp");
     background-size: cover;
-
+   background-position: center center;
     display: flex;
     flex-direction: column;
     gap: 8rem;
