@@ -380,7 +380,7 @@ img#lo {
 
 .what-people-say {
     background:url("../assets/what_people_say_bg.webp");
-    
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
