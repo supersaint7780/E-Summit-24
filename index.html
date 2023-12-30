@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -26,7 +28,32 @@
 
 
 </head>
-
+<style>
+    #style-6::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+    }
+    
+    #style-6::-webkit-scrollbar
+    {
+        width: 10px;
+        background-color: #F5F5F5;
+    }
+    
+    #style-6::-webkit-scrollbar-thumb
+    {
+        background-color: #F90;	
+        background-image: -webkit-linear-gradient(45deg,
+                                                  rgba(255, 255, 255, .2) 25%,
+                                                  transparent 25%,
+                                                  transparent 50%,
+                                                  rgba(255, 255, 255, .2) 50%,
+                                                  rgba(255, 255, 255, .2) 75%,
+                                                  transparent 75%,
+                                                  transparent)
+    }
+    </style>
 <body id="style-6">
     <div id="home">
 
@@ -1458,8 +1485,10 @@
     <section class="newsletter">
         <h2 class="newsletter-head">Subscribe our News Letter</h2>
         <div class="newsletter-input-button-area">
-            <input type="text" placeholder="Enter Your E-Mail" class="newsletter-email-input">
-            <button class="newsletter-subscribe-button">Subscribe</button>
+            <form id="subsform">
+            <input type="text" placeholder="Enter Your E-Mail" id="subs-email" class="newsletter-email-input">
+            <button class="newsletter-subscribe-button" type="submit">Subscribe</button>
+        </form>
         </div>
     </section>
     <!-- newsletter section end -->
@@ -1510,15 +1539,15 @@
 
         <div class="footer-two">
             <h2 class="footer-head footer-two-head">Write to us</h2>
-            <form class="footer-form" action="#" method="POST">
+            <form class="footer-form" id="fotform" action="#" method="POST">
                 <div class="footer-input">
-                    <input type="text" name="name" id="name" placeholder="Full Name">
+                    <input type="text" name="name" id="foot-name" placeholder="Full Name">
                 </div>
                 <div class="footer-input">
-                    <input type="email" name="email" id="email" placeholder="E-Mail">
+                    <input type="email" name="email" id="foot-email" placeholder="E-Mail">
                 </div>
                 <div class="footer-input">
-                    <textarea name="message" id="message" rows="2" placeholder="Message"></textarea>
+                    <textarea name="message" id="foot-message" rows="2" placeholder="Message"></textarea>
                 </div>
                 <br>
                 <div class="button-wrapper">
@@ -1712,6 +1741,7 @@
             element.setAttribute("r","70");
         });
         </script> -->
+        <script src="./scripts/submit.js"></script>
 </body>
 
 </html>
