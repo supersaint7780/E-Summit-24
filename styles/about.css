@@ -76,13 +76,13 @@ div.video-container {
 
 #about{
     width: 100%;
-    background-image: url("../assets/aboutus.webp");
-    background-position: left center;
+    /* background-image: url("../assets/aboutus.webp"); */
+    /* background-position: left center; */
     min-height: 50rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size:auto;
     background-color: black;
     padding: 0 4rem;
