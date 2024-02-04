@@ -1,0 +1,95 @@
+section.speaker-new {
+    width: 100%;
+    background-color: black;
+    /* background-image: url('../assets/schedule.webp'); */
+    /* background-size: cover; */
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    padding: 6rem 10rem;
+}
+
+
+h3.speaker-new-part-head-one {
+    color: #E8E8E8;
+    text-align: center;
+    font-family: Inter;
+    font-size: 2.3125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.08438rem;
+    margin-bottom: 0.5rem;
+}
+
+h2.speaker-new-part-head-two {
+    color: #464646;
+    text-align: center;
+    font-family: Inter;
+    font-size: 3.5625rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.12188rem;
+    margin-bottom: 3rem;
+}
+
+p.speaker-new-part-text {
+    color: #E8E8E8;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.05625rem;
+    margin-bottom: 4rem;
+}
+
+div.speaker-new-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 3.75rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:600px) {
+    section.speaker-new {
+        padding: 6rem 4rem;
+    }
+}
+
+.new-speakers-item {
+    width: 20rem;
+    height: 21rem;
+    margin-top: 1rem;
+    transition: 300ms ease-in-out;
+}
+
+.new-speakers-item-head1 {
+    margin-top: 0.75rem;
+    color: #3b3b3b;
+    font-family: Inter;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.05675rem;
+    text-align: center;
+}
+
+.new-speakers-item-head2 {
+    color: #9b8f8f;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.51263rem;
+}
+
+.new-speakers-item:hover {
+    transform: translateY(-10px);
+}
