@@ -61,17 +61,26 @@ div.sponsor-image-wrapper {
     flex-shrink: 0;
     border-radius: 0.57894rem;
     background: #FFF;
-    padding: 1rem;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+div.sponsor-image-wrapper > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+}
+
 img.sponsor-image {
     display: block;
-    width: 6.25rem;
-    height: auto;
-
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* ensures that images fits according to aspect ration of itself and the parent container */
 }
 
 @media screen and (max-width:600px) {
