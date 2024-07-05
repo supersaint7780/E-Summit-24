@@ -406,23 +406,24 @@ const allSponsorsData = [ /*  Copied from main website's populate-sponsors.js an
     }
   ]
 
+  /* The below comented out code was written to modify the paths of the object list above and log it to the development console by node.js and then it was copied from console and the object list above was replaced by it*/
+
 // allSponsorsData.forEach(spn => {
 //     spn.imageSource = spn.imageSource.replace("https://esummit.ecellnitb.in", ".");
 //     spn.imageSource = spn.imageSource.replace("./assets/logo/", "./assets/old-sponsors/");
 //     spn.imageSource = spn.imageSource.replace("./assets/images/sponsors/", "./assets/old-sponsors/");
 //   }
 // );
-
-console.log(allSponsorsData.length);
+// console.log(allSponsorsData);
 
 const spnContainer = document.getElementById("all-sponsors-brands")
 
-spnContainer.innerHTML = ""
+spnContainer.innerHTML = "" // erase off all the previous HTML in the container
 
-let HTML_to_push = "";
+let HTML_to_push = ""; // inintialise a string that will be pushed as HTML in the contianer.
 
 allSponsorsData.forEach(spn =>{
-    
+    // start adding HTML for each child component to our string
     HTML_to_push += `
             <div class="sponsor-image-wrapper" data-sponsorname="${spn.name}" >
                     <a href="${spn.website}"><img src="${spn.imageSource}" alt="Sponsor"class="sponsor-image"></a>
@@ -431,4 +432,4 @@ allSponsorsData.forEach(spn =>{
     ` 
 })
 
-spnContainer.innerHTML += HTML_to_push;
+spnContainer.innerHTML += HTML_to_push; // push string to main container as HTML
