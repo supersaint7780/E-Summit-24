@@ -1,0 +1,137 @@
+section.sponsor {
+    width: 100%;
+    background-image: url("../assets/sponsor_bg.webp");
+    background-size: cover;
+   background-position: center center;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    padding: 6rem 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h3.sponsor-part-head-one {
+    color: #E8E8E8;
+    text-align: center;
+    font-family: Inter;
+    font-size: 2.3125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.08438rem;
+    margin-bottom: 0.5rem;
+}
+
+h2.sponsor-part-head-two {
+    color: #929292;
+    text-align: center;
+    font-family: Inter;
+    font-size: 3.5625rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.12188rem;
+    margin-bottom: 3rem;
+}
+
+p.sponsor-part-text {
+    color: #E8E8E8;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.05625rem;
+    margin-bottom: 4rem;
+}
+
+div.sponsor-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+div.sponsor-image-wrapper {
+    width: 9.81081rem;
+    height: 7.52125rem;
+    flex-shrink: 0;
+    border-radius: 0.57894rem;
+    background: #FFF;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.sponsor-image-wrapper > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+}
+
+img.sponsor-image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* ensures that images fits according to aspect ration of itself and the parent container */
+}
+
+#spn-hide-btn{
+    background: transparent;
+    border: 1.5px solid #D99343;
+    border-radius: 0.75rem;
+    width: 12.35713rem;
+    height: 3.925rem;
+    color: #CB8A3F;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 0.9995rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.0825rem;
+
+}
+
+#spn-hide-btn:hover{
+    background-color: #D99343;
+    color: white;
+}
+
+
+@media screen and (min-width: 601px){
+    #spn-hide-btn{
+        display: none;
+    }
+
+    #all-sponsors-brands {
+        height: auto; /* Default height for larger screens */
+        overflow: visible;
+    }
+
+    
+}
+
+@media screen and (max-width:600px) {
+    section.sponsor {
+        padding: 6rem 4rem;
+    }
+    #spn-hide-btn{
+        display: block;
+    }
+    #all-sponsors-brands {
+        height: 630px; /* Shorter height for smaller screens */
+        overflow: hidden;
+    }
+    
+}
+

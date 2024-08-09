@@ -1,0 +1,1872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Summit 2024 | E-Cell NIT Bhopal</title>
+    <!-- all stylesheet go here in order of the section-->
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/schedule.css">
+    <link rel="stylesheet" href="./styles/sponsor.css">
+    <link rel="stylesheet" href="./styles/newsletter.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/hover.css">
+    <link rel="stylesheet" href="./styles/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/cf853307e4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./3000 PX Ecell logo 1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/speakers_new.css">
+</head>
+<style>
+    #style-6::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #F5F5F5;
+    }
+
+    #style-6::-webkit-scrollbar {
+        width: 10px;
+        background-color: #F5F5F5;
+    }
+
+    #style-6::-webkit-scrollbar-thumb {
+        background-color: #F90;
+        border-radius: 5px;
+        background-image: -webkit-linear-gradient(45deg,
+                rgba(255, 255, 255, .2) 25%,
+                transparent 25%,
+                transparent 50%,
+                rgba(255, 255, 255, .2) 50%,
+                rgba(255, 255, 255, .2) 75%,
+                transparent 75%,
+                transparent)
+    }
+</style>
+
+<body id="style-6">
+    <div id="home">
+
+        <nav id="nav">
+            <a href="https://www.ecellnitb.in" style="
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    "><img id="logo" src="assets/esummit-logo.webp" alt="logo"></a>
+
+            <ul class="nav-menu">
+                <li><a class="link" href="#home">HOME</a></li>
+                <li><a class="link" href="#about">ABOUT US</a></li>
+                <li><a class="link" href="#join-grid">EVENTS</a></li>
+                <li><a class="link" href="#join-speakers">SPEAKERS</a></li>
+                <li><a class="link" href="#sponsors">SPONSORS</a></li>
+                <li><a class="link" href="http://expo.ecellnitb.in/">EXPO</a></li>
+                <li><a class="link" href="#footer">CONTACT US</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+        </nav>
+        <script src="scripts/nav.js"></script>
+
+        <section id="main">
+            <div data-aos="fade-up" class="main-image-container">
+                <img data-aos="zoom-in-up" class="main-image" src="./assets/entrepreneurship summit.png" alt="event-log"
+                    height="300px" width="612px">
+            </div>
+            <div data-aos="fade-down" class="content">Central India’s Largest Entrepreneurial Fest, connecting great
+                minds and avenging the conventional. Whatever it takes!</div>
+            <div style="display: flex; gap: 1rem; width: 100%; justify-content: center;">
+                <div class="register" style="padding:0rem;"><a href="#join-grid" style="padding: 1rem 3rem;">Explore</a>
+                </div>
+                <div class="register" style="padding:0rem;"><a href="https://expo.ecellnitb.in"
+                        style="padding: 1rem 3rem;">Expo Registration</a></div>
+            </div>
+        </section>
+        <style>
+            .circleGauge {
+                fill: none;
+                stroke: url(#GradientColor);
+                stroke-width: 0.5rem;
+                stroke-dasharray: 29.5rem;
+                /* stroke-dashoffset: 29.5rem; */
+                /* animation: anim 2s linear forwards; */
+                transform-box: fill-box;
+                transform-origin: center;
+                transform: rotate(-90deg);
+                transition: 1s;
+            }
+
+            .circleFull {
+                fill: none;
+                stroke: url(#GradientColor);
+                stroke-width: 0.125rem;
+                transform-box: fill-box;
+                transform-origin: center;
+                transform: rotate(-90deg);
+            }
+
+            @keyframes anim {
+                100% {
+                    stroke-dashoffset: 14.75rem;
+                }
+            }
+
+            .timerDigits {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 100;
+                font-size: 3.2934rem;
+                line-height: 4rem;
+                letter-spacing: 0.03em;
+                fill: #FFFFFF;
+            }
+
+            .timerCaptions {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 1.375rem;
+                line-height: 1.6875rem;
+                letter-spacing: 0.03em;
+                fill: #E8E8E8;
+            }
+
+            @media only screen and (min-width: 400px) and (max-width: 500px) {
+                .timercontainer {
+                    transform: scale(0.8);
+                }
+            }
+
+            @media only screen and (min-width: 300px) and (max-width: 400px) {
+                .timercontainer {
+                    transform: scale(0.75);
+                }
+            }
+        </style>
+        <!-- <section style="
+    display: flex;
+    padding: 3rem 0;
+    width: 100vw;
+    height: 23.375rem;
+    background: linear-gradient(180deg, #1A1707 0%, rgba(0, 0, 0, 0.98) 100%);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    ">
+            <div style="
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6928rem;
+    line-height: 2.0625rem;
+    letter-spacing: 0.03em;
+    color: #E8E8E8;
+    display: block;
+    margin-bottom: 2.5625rem;
+    ">Counting down to E-Summit '24</div>
+            <div class="timercontainer">
+                <svg id="timerContainer" xmlns="http://www.w3.org/2000/svg" version="1.1" style="
+        display: block;
+        /* overflow: visible; */
+        height: 12.6875rem;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        width: 47.3125rem;
+        ">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#AC3931"></stop>
+                            <stop offset="100%" stop-color="#489FB5"></stop>
+                        </linearGradient>
+                    </defs>
+                    <circle class="circleGauge" id="daysGauge" stroke-linecap="round"
+                        style="cx:5rem;cy:5rem;r:4.375rem;">
+                    </circle>
+                    <circle class="circleFull" stroke-linecap="round" style="cx:5rem;cy:5rem;r:4.375rem;"></circle>
+                    <text x="2.8rem" y="6.3rem" id="days" class="timerDigits">07</text>
+                    <text x="3.4rem" y="12.5rem" class="timerCaptions">Days</text>
+                    <circle class=" circleGauge" id="hrsGauge" stroke-linecap="round"
+                        style="cx:17.5rem;cy:5rem;r:4.375rem;">
+                    </circle>
+                    <circle class="circleFull" stroke-linecap="round" style="cx:17.5rem;cy:5rem;r:4.375rem;"></circle>
+                    <text x="15.5rem" y="6.3rem" id="hrs" class="timerDigits">28</text>
+                    <text x="15.6rem" y="12.5rem" class="timerCaptions">Hours</text>
+                    <circle class=" circleGauge" id="minsGauge" stroke-linecap="round"
+                        style="cx:30rem;cy:5rem;r:4.375rem;">
+                    </circle>
+                    <circle class="circleFull" stroke-linecap="round" style="cx:30rem;cy:5rem;r:4.375rem;"></circle>
+                    <text x="28.0rem" y="6.3rem" id="mins" class="timerDigits">60</text>
+                    <text x="27.4rem" y="12.5rem" class="timerCaptions">Minutes</text>
+                    <circle class=" circleGauge" id="secsGauge" stroke-linecap="round"
+                        style="cx:42.4rem;cy:5rem;r:4.375rem;">
+                    </circle>
+                    <circle class="circleFull" stroke-linecap="round" style="cx:42.5rem;cy:5rem;r:4.375rem;"></circle>
+                    <text x="40.45rem" y="6.3rem" id="secs" class="timerDigits">10</text>
+                    <text x="39.9rem" y="12.5rem" class="timerCaptions">Seconds</text>
+                </svg>
+            </div>
+        </section> -->
+        <!-- <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Feb 11, 2024 00:00:00").getTime();
+            // Update the count down every 1 second
+            var x = setInterval(function () {
+                // Get today's date and time
+                var now = new Date().getTime();
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+                // Time calculations for days, hours, minutes and seconds
+                var d = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var s = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById("days").innerHTML = (d.toString().length == 1) ? "0" + d.toString() : d;
+                document.getElementById("hrs").innerHTML = (h.toString().length == 1) ? "0" + h.toString() : h;
+                document.getElementById("mins").innerHTML = (m.toString().length == 1) ? "0" + m.toString() : m;
+                document.getElementById("secs").innerHTML = (s.toString().length == 1) ? "0" + s.toString() : s;
+                document.getElementById("secsGauge").setAttribute("stroke-dashoffset", (((30 - d) / 30) * 29.5) + "rem");
+                document.getElementById("hrsGauge").setAttribute("stroke-dashoffset", (((24 - h) / 24) * 29.5) + "rem");
+                document.getElementById("minsGauge").setAttribute("stroke-dashoffset", (((60 - m) / 60) * 29.5) + "rem");
+                document.getElementById("secsGauge").setAttribute("stroke-dashoffset", (((60 - s) / 60) * 29.5) + "rem");
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                }
+            }, 1000);
+        </script> -->
+    </div>
+    </div>
+
+    <section id="about">
+        <div class="video-container">
+            <iframe class="video-frame" width="560" height="315"
+                src="https://www.youtube.com/embed/SZyA5HwznTM?si=9nlzr3ilrmxdE89r/?&autoplay=1&mute=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="about-context">
+            <div class="about-heading">ABOUT US</div>
+            <div class="about-innertext1">Entrepreneurship Cell NIT Bhopal is a non-profit student organization that
+                works to support and unleash the budding entrepreneurial minds and promote the start-up culture among
+                the students.</div>
+            <div class="about-innertext2"> E-Summit is the flagship Event of Entrepreneurship Cell MANIT, aimed at
+                fueling the entrepreneurial spirit in the students, held start-up founders, and educating the
+                inquisitive minds to create an innovation driven start-up culture. We aim to bring together the academic
+                community, venture capitalists, new-age entrepreneurs and all those passionate about making a difference
+                to common grounds and to give a chance to the students to exhibit and develop their entrepreneurial
+                talent and creativity through various business related games, workshops, guest lectures and
+                competitions; and to create an environment for everyone to learn and grow.</div>
+            <div class="about-lm"><a href="https://ecellnitb.in">Learn More</a></div>
+        </div>
+
+    </section>
+
+
+    <!-- Join the event section -->
+    <section id="join-the-event">
+        <div class="join-opa"></div>
+        <div class="join-title-sponsor">
+            <div id="swiper2" style="overflow-x: hidden;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="join-title-sponsor-content">
+                            <div class="title-sponsor-content">
+                                <p class="title-sponsor-content-head">OUR TITLE SPONSOR</p>
+                                <p class="title-sponsor-content-con">The Adani Group, headquartered in India, is a
+                                    diversified
+                                    conglomerate with a significant global presence. Founded by Gautam Adani, the group
+                                    has
+                                    established itself as a powerhouse in various sectors, including energy, logistics,
+                                    infrastructure, and resources. With a commitment to sustainable development, Adani
+                                    Group has
+                                    played a pivotal role in transforming India's infrastructure landscape, managing and
+                                    operating
+                                    critical ports, power plants, airports, and transmission assets. The conglomerate's
+                                    foray into
+                                    renewable energy and its ambitious projects, such as the development of the Mundra
+                                    Port and
+                                    Special Economic Zone, underscore its commitment to fostering economic growth and
+                                    contributing
+                                    to the nation's progress.</p>
+                                <a class="title-sponsor-content-know" href="https://adani.com/">Know More</a>
+                            </div>
+                            <div class="title-sponsor-logo">
+                                <img id="lo" src="./assets/Assets2/Adani_logo_2012 1.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="join-title-sponsor-content">
+                            <div class="title-sponsor-content">
+                                <p class="title-sponsor-content-head">OUR CO-TITLE SPONSOR</p>
+                                <p class="title-sponsor-content-con">With a rich legacy spanning over two decades,
+                                    Rupeezy stands as a trusted name in the market, having garnered the confidence of
+                                    its clients through the years. Headquartered in Bhopal, their commitment extends
+                                    beyond conventional trading and is dedicated to offering advanced tools that
+                                    streamline the entire trading process. The company is dedicated to the ambitious
+                                    mission of constructing India's most reliable stock market trading platform. Beyond
+                                    the provision of a trading platform, clients get a comprehensive suite of services,
+                                    including regular market updates, insightful analyses, and valuable content. These
+                                    offerings collectively contribute to fostering a nuanced and thorough understanding
+                                    of the intricate stock market landscape.
+                                    Trust, innovation, and empowerment are at the core of Rupeezy's mission, shaping a
+                                    future where innovators thrive.</p>
+                                <a class="title-sponsor-content-know" href="https://rupeezy.in/">Know More</a>
+                            </div>
+                            <div class="title-sponsor-logo">
+                                <img id="lo" src="./assets/sponsor/rupeexy.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="join-grid">
+            <p data-aos="fade-up" class="join-head1 animate__pulse">Join Events</p>
+            <p data-aos="fade-down" class="join-head2">What’s in the box?</p>
+            <div class="join-grid-items">
+                <div class="card-float">
+                    <a href="https://expo.ecellnitb.in/" target="_blank">
+                        <div class="join-grid-item" data-aos="flip-right">
+                            <div class="join-grid-img">
+                                <img src="./assets/expo.svg" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-grid-item-head">Start Up Expo</p>
+                            <p class="join-grid-item-content">Start-up Expo serves as a medium for all the start-ups
+                                aiming
+                                to soar high. This event brings the opportunity to present your ideas before investors
+                                and
+                                procure investments, founders and working space from experts.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-float">
+                    <a href="https://unstop.com/competitions/business-plan-pitching-competition-24-e-summit24-national-institute-of-technology-nit-bhopal-856939"
+                        target="_blank">
+                        <div class="join-grid-item " data-aos="flip-left">
+                            <div class="join-grid-img">
+                                <img src="./assets/bplan.svg" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-grid-item-head">Business Plan Competition</p>
+                            <p class="join-grid-item-content">The event provides opportunity to the start-ups in
+                                ideation
+                                and validation phase to pitch their ideas in front of a bench of venture capitalists and
+                                a
+                                panel of experts in order to secure funding.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-float">
+                    <div class="join-grid-item" data-aos="flip-left">
+                        <div class="join-grid-img">
+                            <img src="./assets/case_study.svg" alt="" width="100%" height="100%" style="scale: 1.2;">
+                        </div>
+                        <p class="join-grid-item-head">Case Study Competition</p>
+                        <p class="join-grid-item-content">
+                            This competition, in collaboration with a start-up or established company, challenges
+                            participants with real-world business problems. They present their solutions to a panel,
+                            fostering critical thinking and nurturing an entrepreneurial mindset.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-float">
+                    <a href="https://unstop.com/hackathons/central-indias-largest-hackathon-24-e-summit24-national-institute-of-technology-nit-bhopal-857141"
+                        target="_blank">
+                        <div class="join-grid-item" data-aos="flip-right">
+                            <div class="join-grid-img">
+                                <img src="./assets/hackathon.svg" alt="" width="100%" height="100%"
+                                    style="scale: 1.25;">
+                            </div>
+                            <p class="join-grid-item-head">Hackathon</p>
+                            <p class="join-grid-item-content">Central India’s largest hackathon entails participants to
+                                rack
+                                their grey cells to think and code solving real world problem sets with the help of
+                                their
+                                experiments mentors.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-float">
+                    <div class="join-grid-item" data-aos="flip-right">
+                        <div class="join-grid-img">
+                            <img src="./assets/creators.svg" alt="" width="100%" height="100%"
+                                style="transform: translateY(12px);">
+                        </div>
+                        <p class="join-grid-item-head">Creator’s Camp</p>
+                        <p class="join-grid-item-content">E-Summit'24's Creators Camp is your gateway to transforming
+                            your creative passions into a thriving business. Our event is packed with inspiring
+                            speakers, contests,and to set you on the path to creative success..</p>
+                    </div>
+                </div>
+                <div class="card-float">
+                    <div class="join-grid-item" data-aos="flip-left">
+                        <div class="join-grid-img">
+                            <img src="./assets/ipl.svg" alt="" width="100%" height="100%" style="scale: 0.9;">
+                        </div>
+                        <p class="join-grid-item-head">IPL Auction</p>
+                        <p class="join-grid-item-content">Ruling with the mighty hammer where the three strikes define
+                            the risk taking capability at E-Summit’24. It concreates the decision making skill set of
+                            the participants in a simulated team bidding environment.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-float">
+                    <a href="https://bit.ly/ecell_stocktrading" target="_blank">
+                        <div class="join-grid-item" data-aos="flip-left">
+                            <div class="join-grid-img">
+                                <img src="./assets/stock.svg" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-grid-item-head">Stock Trading Simulation</p>
+                            <p class="join-grid-item-content">The Stock Trading Simulation offers participants the
+                                opportunity to master the art of trading before venturing into the real world, providing
+                                an
+                                immersive, practical learning experience that's as close to the real deal as it gets.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-float">
+                    <a href="https://unstop.com/competitions/central-indias-largest-crypto-trading-simulation-24-e-summit24-national-institute-of-technology-nit-bhopal-858927"
+                        target="_blank">
+                        <div class="join-grid-item" data-aos="flip-left">
+                            <div class="join-grid-img">
+                                <img src="./assets/crypto.svg" alt="" width="100%" height="100%" style="width: 8rem;">
+                            </div>
+                            <p class="join-grid-item-head">Crypto Trading Simulation</p>
+                            <p class="join-grid-item-content">Crypto Trading Simulation allows participants to
+                                experience
+                                the thrill of crypto trading without the risk, with practical insights gained through
+                                simulated investments in real time.</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="grid-las" class="card-float">
+                    <div class="join-grid-item" data-aos="flip-left">
+                        <div class="join-grid-img">
+                            <img src="./assets/keynote.svg" alt="" width="100%" height="100%">
+                        </div>
+                        <p class="join-grid-item-head">Keynote Session</p>
+                        <p class="join-grid-item-content">
+                            Keynote Sessions by accomplished individuals offer a priceless chance to gain insights from
+                            success stories. They inspire and invigorate, revealing the wisdom of achievers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- current speakers section -->
+    <section id="speakers-new" class="speaker-new">
+        <div class="speaker-new-part">
+            <h3 class="speaker-new-part-head-one">Speakers</h3>
+            <h2 class="speaker-new-part-head-two">Meet Your Speaker/Guest </h2>
+            <div class="speaker-new-image-container">
+                <div class="new-speakers-item">
+                    <div class="new-speakers-item-img">
+                        <img src="./assets/speakers_new/tanu.png" alt="tanu jain" width="100%" height="100%">
+                    </div>
+                    <p class="new-speakers-item-head1">Dr. Tanu Jain</p>
+                    <p class="new-speakers-item-head2">
+                        Founder, Tathastu ICS <br>
+                        Ex-Bureaucrat
+                    </p>
+                </div>
+                <div class="new-speakers-item">
+                    <div class="new-speakers-item-img">
+                        <img src="./assets/speakers_new/nv.png" alt="nv sir" width="100%" height="100%">
+                    </div>
+                    <p class="new-speakers-item-head1">Nitin Vijay</p>
+                    <p class="new-speakers-item-head2">
+                        Founder, CEO Motion Education
+                    </p>
+                </div>
+                <div class="new-speakers-item">
+                    <div class="new-speakers-item-img">
+                        <img src="./assets/speakers_new/anubhav.png" alt="" width="100%" height="100%">
+                    </div>
+                    <p class="new-speakers-item-head1">Anubhav Dubey</p>
+                    <p class="new-speakers-item-head2">Founder, CEO Chai Sutta Bar</p>
+                </div>
+                <div class="new-speakers-item">
+                    <div class="new-speakers-item-img">
+                        <img src="./assets/speakers_new/narhari.png" alt="" width="100%" height="100%">
+                    </div>
+                    <p class="new-speakers-item-head1">Shri P. Narhari Ji</p>
+                    <p class="new-speakers-item-head2">
+                        Secretary MSME Dept. <br>
+                        And Comm. Industries,Gov MP
+                    </p>
+                </div>
+                <div class="new-speakers-item">
+                    <div class="new-speakers-item-img">
+                        <img src="./assets/speakers_new/gaurav.png" alt="" width="100%" height="100%">
+                    </div>
+                    <p class="new-speakers-item-head1">Gaurav Juyal</p>
+                    <p class="new-speakers-item-head2">
+                        TEDx Speaker <br>
+                        Hosted the Art Attack
+                    </p>
+                </div>
+                <div class="new-speakers-item">
+                    <div class="new-speakers-item-img">
+                        <img src="./assets/speakers_new/nidhi.png" alt="" width="100%" height="100%">
+                    </div>
+                    <p class="new-speakers-item-head1">Nidhi Narwal</p>
+                    <p class="new-speakers-item-head2">
+                        Poet and Narrator <br>
+                        Host of Podcase Nazariya
+                    </p>
+                </div>
+                <div class="new-speakers-item">
+                    <div class="new-speakers-item-img">
+                        <img src="./assets/speakers_new/sarad.png" alt="" width="100%" height="100%">
+                    </div>
+                    <p class="new-speakers-item-head1">Sharad Vivek Sagar</p>
+                    <p class="new-speakers-item-head2">Indian Social Entrepreneur</p>
+                </div>
+                <div class="new-speakers-item">
+                    <div class="new-speakers-item-img">
+                        <img src="./assets/speakers_new/sunil.png" alt="" width="100%" height="100%">
+                    </div>
+                    <p class="new-speakers-item-head1">Sunil Sharma</p>
+                    <p class="new-speakers-item-head2">
+                        Founder Coingape Media <br>And Squadx Innovation
+                    </p>
+                </div>
+                <div class="new-speakers-item">
+                    <div class="new-speakers-item-img">
+                        <img src="./assets/speakers_new/vikas.png" alt="" width="100%" height="100%">
+                    </div>
+                    <p class="new-speakers-item-head1">Vikas Swarup</p>
+                    <p class="new-speakers-item-head2">
+                        Former Foreign Secretary <br>
+                        And Indian Diplomat
+                    </p>
+                </div>
+                <div class="new-speakers-item">
+                    <div class="new-speakers-item-img">
+                        <img src="./assets/speakers_new/shubham.png" alt="" width="100%" height="100%">
+                    </div>
+                    <p class="new-speakers-item-head1">Shubham Singh Thakur</p>
+                    <p class="new-speakers-item-head2">
+                        Partner <br>
+                        Boudhik IP LLP
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- schedule section start -->
+
+    <!-- <section id="schedule">
+        <h3 class="schedule-head">Schedule</h3>
+        <h2 class="schedule-sub-head">Event Schedule</h2>
+        <div class="event-btn">
+            <div onclick="button_one()" class="btn-date feb9 btn-date-click">
+                <p>9 February</p>
+                <p class="event-year">2024</p>
+            </div>
+            <div onclick="button_two()" class="btn-date feb10">
+                <p>10 February</p>
+                <p class="event-year">2024</p>
+            </div>
+            <div onclick="button_three()" class="btn-date feb11">
+                <p>11 February</p>
+                <p class="event-year">2024</p>
+            </div>
+        </div>
+        <div class="timeline1 timeline-click">
+            <div class="event-timeline">
+                <div class="event-tl">
+                    <div class="event-tl-p1">
+                        <p class="event-name-tl">Keynote Session</p>
+                        <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+                        </p>
+                    </div>
+                    <div class="event-tl-p2">
+                        <img src="/assets/akhilendra.webp" alt="" class="event-img-tl">
+                        <p class="event-img-spk">Akhilendra Rai</p>
+                    </div>
+
+                </div>
+                <div class="line-tl">
+                    <div class="left-hr"></div>
+                    <div class="right-hr"></div>
+                </div>
+            </div>
+            <div class="event-timeline">
+                <div class="event-tl">
+                    <div class="event-tl-p1">
+                        <p class="event-name-tl">Keynote Session</p>
+                        <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+                        </p>
+                    </div>
+                    <div class="event-tl-p2">
+                        <img src="/assets/akhilendra.webp" alt="" class="event-img-tl">
+                        <p class="event-img-spk">Akhilendra Rai</p>
+                    </div>
+
+                </div>
+                <div class="line-tl">
+                    <div class="left-hr"></div>
+                    <div class="right-hr"></div>
+                </div>
+            </div>
+            <div class="event-timeline">
+                <div class="event-tl">
+                    <div class="event-tl-p1">
+                        <p class="event-name-tl">Keynote Session</p>
+                        <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+                        </p>
+                    </div>
+                    <div class="event-tl-p2">
+                        <img src="/assets/akhilendra.webp" alt="" class="event-img-tl">
+                        <p class="event-img-spk">Akhilendra Rai</p>
+                    </div>
+
+                </div>
+                <div class="line-tl">
+                    <div class="left-hr"></div>
+                    <div class="right-hr"></div>
+                </div>
+            </div>
+            <div class="event-timeline">
+                <div class="event-tl">
+                    <div class="event-tl-p1">
+                        <p class="event-name-tl">Keynote Session</p>
+                        <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+                        </p>
+                    </div>
+                    <div class="event-tl-p2">
+                        <img src="/assets/akhilendra.webp" alt="" class="event-img-tl">
+                        <p class="event-img-spk">Akhilendra Rai</p>
+                    </div>
+
+                </div>
+                <div class="line-tl">
+                    <div class="left-hr"></div>
+                    <div class="right-hr"></div>
+                </div>
+            </div>
+            <div class="event-timeline">
+                <div class="event-tl">
+                    <div class="event-tl-p1">
+                        <p class="event-name-tl">Keynote Session</p>
+                        <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+                        </p>
+                    </div>
+                    <div class="event-tl-p2">
+                        <img src="/assets/akhilendra.webp" alt="" class="event-img-tl">
+                        <p class="event-img-spk">Akhilendra Rai</p>
+                    </div>
+
+                </div>
+                <div class="line-tl">
+                    <div class="left-hr"></div>
+                    <div class="right-hr"></div>
+                </div>
+            </div>
+        </div>
+        <div class="timeline2">
+            <div class="event-timeline">
+                <div class="event-tl">
+                    <div class="event-tl-p1">
+                        <p class="event-name-tl">Keynote Session</p>
+                        <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+                        </p>
+                    </div>
+                    <div class="event-tl-p2">
+                        <img src="/assets/akhilendra.webp" alt="" class="event-img-tl">
+                        <p class="event-img-spk">Akhilendra Rai</p>
+                    </div>
+
+                </div>
+                <div class="line-tl">
+                    <div class="left-hr"></div>
+                    <div class="right-hr"></div>
+                </div>
+            </div>
+            <div class="event-timeline">
+                <div class="event-tl">
+                    <div class="event-tl-p1">
+                        <p class="event-name-tl">Keynote Session</p>
+                        <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+                        </p>
+                    </div>
+                    <div class="event-tl-p2">
+                        <img src="/assets/akhilendra.webp" alt="" class="event-img-tl">
+                        <p class="event-img-spk">Akhilendra Rai</p>
+                    </div>
+
+                </div>
+                <div class="line-tl">
+                    <div class="left-hr"></div>
+                    <div class="right-hr"></div>
+                </div>
+            </div>
+            <div class="event-timeline">
+                <div class="event-tl">
+                    <div class="event-tl-p1">
+                        <p class="event-name-tl">Keynote Session</p>
+                        <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+                        </p>
+                    </div>
+                    <div class="event-tl-p2">
+                        <img src="/assets/akhilendra.webp" alt="" class="event-img-tl">
+                        <p class="event-img-spk">Akhilendra Rai</p>
+                    </div>
+
+                </div>
+                <div class="line-tl">
+                    <div class="left-hr"></div>
+                    <div class="right-hr"></div>
+                </div>
+            </div>
+            <div class="event-timeline">
+                <div class="event-tl">
+                    <div class="event-tl-p1">
+                        <p class="event-name-tl">Keynote Session</p>
+                        <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+                        </p>
+                    </div>
+                    <div class="event-tl-p2">
+                        <img src="/assets/akhilendra.webp" alt="" class="event-img-tl">
+                        <p class="event-img-spk">Akhilendra Rai</p>
+                    </div>
+
+                </div>
+                <div class="line-tl">
+                    <div class="left-hr"></div>
+                    <div class="right-hr"></div>
+                </div>
+            </div>
+            <div class="event-timeline">
+                <div class="event-tl">
+                    <div class="event-tl-p1">
+                        <p class="event-name-tl">Keynote Session</p>
+                        <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+                        </p>
+                    </div>
+                    <div class="event-tl-p2">
+                        <img src="/assets/akhilendra.webp" alt="" class="event-img-tl">
+                        <p class="event-img-spk">Akhilendra Rai</p>
+                    </div>
+
+                </div>
+                <div class="line-tl">
+                    <div class="left-hr"></div>
+                    <div class="right-hr"></div>
+                </div>
+            </div>
+        </div>
+        <div class="timeline3">
+            <div class="event-timeline">
+                <div class="event-tl">
+                    <div class="event-tl-p1">
+                        <p class="event-name-tl">Keynote Session</p>
+                        <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+                        </p>
+                    </div>
+                    <div class="event-tl-p2">
+                        <img src="/assets/akhilendra.webp" alt="" class="event-img-tl">
+                        <p class="event-img-spk">Akhilendra Rai</p>
+                    </div>
+
+                </div>
+                <div class="line-tl">
+                    <div class="left-hr"></div>
+                    <div class="right-hr"></div>
+                </div>
+            </div>
+            <div class="event-timeline">
+                <div class="event-tl">
+                    <div class="event-tl-p1">
+                        <p class="event-name-tl">Keynote Session</p>
+                        <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+                        </p>
+                    </div>
+                    <div class="event-tl-p2">
+                        <img src="/assets/akhilendra.webp" alt="" class="event-img-tl">
+                        <p class="event-img-spk">Akhilendra Rai</p>
+                    </div>
+
+                </div>
+                <div class="line-tl">
+                    <div class="left-hr"></div>
+                    <div class="right-hr"></div>
+                </div>
+            </div>
+            <div class="event-timeline">
+                <div class="event-tl">
+                    <div class="event-tl-p1">
+                        <p class="event-name-tl">Keynote Session</p>
+                        <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+                        </p>
+                    </div>
+                    <div class="event-tl-p2">
+                        <img src="/assets/akhilendra.webp" alt="" class="event-img-tl">
+                        <p class="event-img-spk">Akhilendra Rai</p>
+                    </div>
+
+                </div>
+                <div class="line-tl">
+                    <div class="left-hr"></div>
+                    <div class="right-hr"></div>
+                </div>
+            </div>
+            <div class="event-timeline">
+                <div class="event-tl">
+                    <div class="event-tl-p1">
+                        <p class="event-name-tl">Keynote Session</p>
+                        <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+                        </p>
+                    </div>
+                    <div class="event-tl-p2">
+                        <img src="/assets/akhilendra.webp" alt="" class="event-img-tl">
+                        <p class="event-img-spk">Akhilendra Rai</p>
+                    </div>
+
+                </div>
+                <div class="line-tl">
+                    <div class="left-hr"></div>
+                    <div class="right-hr"></div>
+                </div>
+            </div>
+            <div class="event-timeline">
+                <div class="event-tl">
+                    <div class="event-tl-p1">
+                        <p class="event-name-tl">Keynote Session</p>
+                        <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+                        </p>
+                    </div>
+                    <div class="event-tl-p2">
+                        <img src="/assets/akhilendra.webp" alt="" class="event-img-tl">
+                        <p class="event-img-spk">Akhilendra Rai</p>
+                    </div>
+
+                </div>
+                <div class="line-tl">
+                    <div class="left-hr"></div>
+                    <div class="right-hr"></div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- <script>
+
+        const button1 = document.querySelector(".feb9");
+        const button2 = document.querySelector(".feb10");
+        const button3 = document.querySelector(".feb11");
+
+        const timeline1 = document.querySelector(".timeline1");
+        const timeline2 = document.querySelector(".timeline2");
+        const timeline3 = document.querySelector(".timeline3");
+
+        function button_one() {
+            if(!button1.classList.contains('btn-date-click')){
+                button1.classList.add('btn-date-click');
+                if(button2.classList.contains('btn-date-click')){
+                    button2.classList.remove('btn-date-click');
+                }
+                if(button3.classList.contains('btn-date-click')){
+                    button3.classList.remove('btn-date-click');
+                }
+            }
+
+            if(!timeline1.classList.contains('timeline-click')){
+                timeline1.classList.add('timeline-click');
+                if(timeline2.classList.contains('timeline-click')){
+                    timeline2.classList.remove('timeline-click');
+                }
+                if(timeline3.classList.contains('timeline-click')){
+                    timeline3.classList.remove('timeline-click');
+                }
+            }
+        }
+
+        function button_two() {
+            if(!button2.classList.contains('btn-date-click')){
+                button2.classList.add('btn-date-click');
+                if(button1.classList.contains('btn-date-click')){
+                    button1.classList.remove('btn-date-click');
+                }
+                if(button3.classList.contains('btn-date-click')){
+                    button3.classList.remove('btn-date-click');
+                }
+            }
+
+            if(!timeline2.classList.contains('timeline-click')){
+                timeline2.classList.add('timeline-click');
+                if(timeline1.classList.contains('timeline-click')){
+                    timeline1.classList.remove('timeline-click');
+                }
+                if(timeline3.classList.contains('timeline-click')){
+                    timeline3.classList.remove('timeline-click');
+                }
+            }
+        }
+
+        function button_three() {
+            if(!button3.classList.contains('btn-date-click')){
+                button3.classList.add('btn-date-click');
+                if(button1.classList.contains('btn-date-click')){
+                    button1.classList.remove('btn-date-click');
+                }
+                if(button2.classList.contains('btn-date-click')){
+                    button2.classList.remove('btn-date-click');
+                }
+            }
+
+            if(!timeline3.classList.contains('timeline-click')){
+                timeline3.classList.add('timeline-click');
+                if(timeline1.classList.contains('timeline-click')){
+                    timeline1.classList.remove('timeline-click');
+                }
+                if(timeline2.classList.contains('timeline-click')){
+                    timeline2.classList.remove('timeline-click');
+                }
+            }
+        }
+    </script> -->
+    <!-- Join the event section ends -->
+    <!-- speakers section starts -->
+    <section id="join-speakers" style="
+    overflow: hidden;
+">
+        <div class="join-speakers-upimg">
+            <img src="./assets/Assets2/image 28.webp" alt="" width="100%" height="100%"
+                style="filter: drop-shadow(2px 4px 6px black);position: relative;top: -1px;">
+        </div>
+        <div class="join-speakers-grid" style="margin:0;
+    margin-top: 4rem;
+">
+            <p data-aos="zoom-in-up" class="join-speakers-grid-head1 aos-init aos-animate" style="
+    margin: 0;
+">Speakers</p>
+            <p data-aos="zoom-in-up" class="join-speakers-grid-head2 aos-init aos-animate">Our Past Speakers/Guests</p>
+            <div style="
+    width: 100%;
+">
+                <div class="join-speakers-grid-items marquee" style="
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+">
+                    <a href="#" class="hvr-float-shadow aos-init">
+                        <div class="join-speakers-grid-item">
+                            <div class="join-speakers-grid-item-img">
+                                <img src="./assets/speakers/16.webp" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-speakers-grid-item-head1">Sanyam Bhadola</p>
+                            <p class="join-speakers-grid-item-head2">CDO, Physics Wallah</p>
+                        </div>
+                    </a>
+                    <a href="#" class="hvr-float-shadow aos-init">
+                        <div class="join-speakers-grid-item">
+                            <div class="join-speakers-grid-item-img">
+                                <img src="./assets/speakers/12.webp" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-speakers-grid-item-head1">Prerna &amp; Harsh</p>
+                            <p class="join-speakers-grid-item-head2">The Wanderers Hub</p>
+                        </div>
+                    </a>
+
+
+                    <a href="#" class="hvr-float-shadow aos-init">
+                        <div class="join-speakers-grid-item">
+                            <div class="join-speakers-grid-item-img">
+                                <img src="./assets/speakers/narhariji.webp" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-speakers-grid-item-head1">Dr P. Narhariji</p>
+                            <p class="join-speakers-grid-item-head2">Secretary MSME Dept.<br>
+                                Govt. Of India</p>
+                        </div>
+                    </a>
+                    <a href="#" class="hvr-float-shadow ">
+                        <div class="join-speakers-grid-item">
+                            <div class="join-speakers-grid-item-img">
+                                <img src="./assets/speakers/3.webp" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-speakers-grid-item-head1">Shivraj Chouhan</p>
+                            <p class="join-speakers-grid-item-head2">Hon' Former CM Madhya Pradesh</p>
+                        </div>
+                    </a>
+                    <a href="#" class="hvr-float-shadow aos-init">
+                        <div class="join-speakers-grid-item">
+                            <div class="join-speakers-grid-item-img">
+                                <img src="./assets/speakers/Zev_Siegl.webp" alt="" width="100%" height="100%"
+                                    style="display: block; border-radius: 5px;">
+                            </div>
+                            <p class="join-speakers-grid-item-head1">Zev Siegl</p>
+                            <p class="join-speakers-grid-item-head2">CEO, Starbucks</p>
+                        </div>
+                    </a>
+                    <a href="#" class="hvr-float-shadow aos-init">
+                        <div class="join-speakers-grid-item">
+                            <div class="join-speakers-grid-item-img">
+                                <img src="./assets/speakers/11.webp" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-speakers-grid-item-head1">Greg S. Reid</p>
+                            <p class="join-speakers-grid-item-head2">Forbes Top 5 Keynote Speakers</p>
+                        </div>
+                    </a>
+                    <a href="#" class="hvr-float-shadow aos-init">
+                        <div class="join-speakers-grid-item">
+                            <div class="join-speakers-grid-item-img">
+                                <img src="./assets/speakers/4.webp" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-speakers-grid-item-head1">Anurag Dobhal</p>
+                            <p class="join-speakers-grid-item-head2">The UK07 Rider</p>
+                        </div>
+                    </a>
+                    <a href="#" class="hvr-float-shadow aos-init">
+                        <div class="join-speakers-grid-item">
+                            <div class="join-speakers-grid-item-img">
+                                <img src="./assets/speakers/5.webp" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-speakers-grid-item-head1">Justin Joseph</p>
+                            <p class="join-speakers-grid-item-head2">A Renowned Storyteller</p>
+                        </div>
+                    </a>
+                    <a href="#" class="hvr-float-shadow aos-init">
+                        <div class="join-speakers-grid-item">
+                            <div class="join-speakers-grid-item-img">
+                                <img src="./assets/speakers/fraz.webp" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-speakers-grid-item-head1">Fraz Mohammad</p>
+                            <p class="join-speakers-grid-item-head2">Ex SWE Google | 390k+ YT | TedX</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="hvr-float-shadow aos-init">
+                        <div class="join-speakers-grid-item">
+                            <div class="join-speakers-grid-item-img">
+                                <img src="./assets/speakers/6.webp" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-speakers-grid-item-head1">Anubhav Sapra</p>
+                            <p class="join-speakers-grid-item-head2">Founder Delhi Food Walks</p>
+                        </div>
+                    </a>
+                    <a href="#" class="hvr-float-shadow aos-init">
+                        <div class="join-speakers-grid-item">
+                            <div class="join-speakers-grid-item-img">
+                                <img src="./assets/speakers/14.webp" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-speakers-grid-item-head1">Abhishek Upmanyu</p>
+                            <p class="join-speakers-grid-item-head2">Standup Comedian</p>
+                        </div>
+                    </a>
+
+
+                    <a href="#" class="hvr-float-shadow ">
+                        <div class="join-speakers-grid-item">
+                            <div class="join-speakers-grid-item-img">
+                                <img src="./assets/speakers/1.webp" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-speakers-grid-item-head1">Ashneer Grover</p>
+                            <p class="join-speakers-grid-item-head2">Founder,BharatPe</p>
+                        </div>
+                    </a>
+                    <a href="#" class="hvr-float-shadow ">
+                        <div class="join-speakers-grid-item">
+                            <div class="join-speakers-grid-item-img">
+                                <img src="./assets/speakers/2.webp" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-speakers-grid-item-head1">Prafull Billore</p>
+                            <p class="join-speakers-grid-item-head2">Founder,MBA Chaiwala</p>
+                        </div>
+                    </a>
+                    <a href="#" class="hvr-float-shadow ">
+                        <div class="join-speakers-grid-item">
+                            <div class="join-speakers-grid-item-img">
+                                <img src="./assets/speakers/major_bakshi.webp" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-speakers-grid-item-head1">Major General GD Bakshi</p>
+                            <p class="join-speakers-grid-item-head2">SM, VSM</p>
+                        </div>
+                    </a>
+
+
+
+                    <a href="#" class="hvr-float-shadow aos-init">
+                        <div class="join-speakers-grid-item">
+                            <div class="join-speakers-grid-item-img">
+                                <img src="./assets/speakers/13.webp" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-speakers-grid-item-head1">Vanika Sangtani</p>
+                            <p class="join-speakers-grid-item-head2">Poet &amp; Storyteller</p>
+                        </div>
+                    </a>
+
+                    <a id="speak-las" href="#" class="hvr-float-shadow aos-init">
+                        <div class="join-speakers-grid-item">
+                            <div class="join-speakers-grid-item-img">
+                                <img src="./assets/speakers/15.webp" alt="" width="100%" height="100%">
+                            </div>
+                            <p class="join-speakers-grid-item-head1">Naman Deshmukh</p>
+                            <p class="join-speakers-grid-item-head2">Silver Play Button Youtube Creator</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <p data-aos="zoom-in-up" class="join-speakers-grid-head2 aos-init"
+            style="margin-top: 4.5rem;font-size: 2rem;font-weight: 400;margin-bottom: 2rem;">And Many More...</p>
+        <div class="join-speakers-upimg" style="
+">
+            <img src="./assets/Assets2/image 29.webp" alt="" width="100%" height="100%" style="
+    filter: drop-shadow(2px -4px 6px black);
+    position: relative;
+    bottom: -6px;
+">
+        </div>
+    </section>
+    <style>
+        .marquee {
+            -moz-animation: scroll-left 2s linear alternate infinite;
+            -webkit-animation: scroll-left 2s linear alternate infinite;
+            animation: scroll-left 20s linear alternate infinite;
+        }
+
+        @-moz-keyframes scroll-left {
+
+            100% {
+                -moz-transform: translateX(calc(-21rem * 8 + 100vw));
+            }
+        }
+
+        @-webkit-keyframes scroll-left {
+
+            100% {
+                -webkit-transform: translateX(calc(-21rem * 8 + 100vw));
+            }
+        }
+
+        @keyframes scroll-left {
+
+            100% {
+                -moz-transform: translateX(calc(-21rem * 8 + 100vw));
+                -webkit-transform: translateX(calc(-21rem * 8 + 100vw));
+                transform: translateX(calc(-21rem * 8 + 100vw));
+            }
+        }
+    </style>
+    <!-- speaker section ends -->
+    <!-- gallery starts -->
+    <section class="gallery">
+        <div class="gallery-head-container">
+            <h3 class="gallery-head-small">Gallery</h3>
+            <h2 class="gallery-head-large">Glimpse of E-Summit-24</h2>
+        </div>
+        <div class="scroller" data-direction="left" data-speed="slow">
+            <div class="scroller__inner">
+                <img src="./assets/glimpses/1.JPG" alt="gallery" />
+                <img src="./assets/glimpses/2.JPG" alt="gallery" />
+                <img src="./assets/glimpses/3.JPG" alt="gallery" />
+                <img src="./assets/glimpses/4.JPG" alt="gallery" />
+                <img src="./assets/glimpses/5.JPG" alt="gallery" />
+                <img src="./assets/glimpses/6.JPG" alt="gallery" />
+                <img src="./assets/glimpses/7.JPG" alt="gallery" />
+                <img src="./assets/glimpses/8.JPG" alt="gallery" />
+                <img src="./assets/glimpses/9.JPG" alt="gallery" />
+                <img src="./assets/glimpses/10.JPG" alt="gallery" />
+                <img src="./assets/glimpses/11.jpg" alt="gallery" />
+                <img src="./assets/glimpses/12.JPG" alt="gallery" />
+                
+              
+            </div>
+        </div>
+    </section>
+    <!-- gallery ends -->
+    <!-- slider starts -->
+    <section class="what-people-say" style="overflow-x: hidden;" id="desk-slid">
+        <div class="join-opa"></div>
+        <div class="what-people-say-content">
+            <p class="what-people-say-content-head1">What People Say <span class="what-people-say-content-about">About
+                    Us</span> </p>
+            <p class="what-people-say-content-subhead">Constructive feedback has always been a vital part of our
+                journey. Know what people feel about us!</p>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider-content">
+                            <div class="slider-content-item">
+                                <div class="slider-item-content">
+                                    I really liked the passion and enthusiasm of the event at MANIT over all. Great team
+                                    effort put in and
+                                    even the flow planned was really good.
+                                    I would have really liked to interact more with StartUps or even seen how I could
+                                    help them.
+                                    From an event and flow perspective it seemed great maybe the execution could be
+                                    something that could
+                                    be worked on. Would love to revisit and get more time with the Bhopal startup
+                                    ecosystem.
+                                    Wishing you all the best!
+                                </div>
+                                <div class="slider-item-tri">
+                                    <img src="./assets/Assets2/tri.svg" alt="">
+                                </div>
+                                <div class="slider-item-info">
+                                    <div class="slider-item-info-profile">
+                                        <img class="slider-item-info-profile-img" src="./assets/kruti.png" alt="Kruti">
+                                    </div>
+                                    <div class="slider-item-info-profile-flex">
+                                        <div class="slider-item-info-profile-name">Kruti Rayani</div>
+                                        <div class="slider-item-info-profile-desig">Head Of Investments,<br> Lead Angels
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-content">
+                            <div class="slider-content-item">
+                                <div class="slider-item-content">
+                                    It was a pleasure to be at E-Summit 23 at MANIT. The team worked extremely hard to
+                                    put together an
+                                    excellent show.
+                                    They were focused and meticulous and delivered a great experience for the judges and
+                                    the attendees.
+                                    Look forward to the next one!
+                                </div>
+                                <div class="slider-item-tri">
+                                    <img src="./assets/Assets2/tri.svg" alt="">
+                                </div>
+                                <div class="slider-item-info">
+                                    <div class="slider-item-info-profile">
+                                        <img class="slider-item-info-profile-img" src="./assets/neharika.png"
+                                            alt="Kruti">
+                                    </div>
+                                    <div class="slider-item-info-profile-flex">
+                                        <div class="slider-item-info-profile-name">Neharika Rajiv</div>
+                                        <div class="slider-item-info-profile-desig">Angel Investor <br>For 14 years
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-content">
+                            <div class="slider-content-item">
+                                <div class="slider-item-content">
+                                    It was yet another wonderful experience and amazed at the student run initiative
+                                    like yours! it was
+                                    managed professionally right from the time the program was planned, time limits,
+                                    online session, question
+                                    time, etc. all handled seamlessly.
+                                    Good show and hoping to contribute more as a Speaker / Jury / Mentor in your
+                                    upcoming events as well!
+                                    Congratulations team!!
+                                </div>
+                                <div class="slider-item-tri">
+                                    <img src="./assets/Assets2/tri.svg" alt="">
+                                </div>
+                                <div class="slider-item-info">
+                                    <div class="slider-item-info-profile">
+                                        <img class="slider-item-info-profile-img" src="./assets/shyam.png" alt="Kruti">
+                                    </div>
+                                    <div class="slider-item-info-profile-flex">
+                                        <div class="slider-item-info-profile-name">Shyam Sekar S</div>
+                                        <div class="slider-item-info-profile-desig">Chief Menotor & Strategist
+                                            <br>Startup Xperts Business Consulting
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-content">
+                            <div class="slider-content-item">
+                                <div class="slider-item-content">
+                                    Swap Automotive is thankful to Entrepreneurship Cell MANIT Bhopal for inviting us at
+                                    awesome
+                                    campus with the best arrangements for E-Summit 2023.
+                                    Management team were quite helpful and supportive throughout the event.
+                                    The value created at MANIT campus was quite good and speakers organized were very
+                                    valuable.
+                                </div>
+                                <div class="slider-item-tri">
+                                    <img src="./assets/Assets2/tri.svg" alt="">
+                                </div>
+                                <div class="slider-item-info">
+                                    <div class="slider-item-info-profile">
+                                        <img class="slider-item-info-profile-img" src="./assets/vedansh.png"
+                                            alt="Kruti">
+                                    </div>
+                                    <div class="slider-item-info-profile-flex">
+                                        <div class="slider-item-info-profile-name">Vedansh Thakur</div>
+                                        <div class="slider-item-info-profile-desig">CFO <br>Swap Automotive</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-content">
+                            <div class="slider-content-item">
+                                <div class="slider-item-content">
+                                    I thanks E-Cell NIT Bhopal for inviting me to be a part of there investor network. I
+                                    am honoured to have
+                                    the opportunity to help organisations grow successfully. I look forward to
+                                    supporting new and innovative
+                                    ideas of aspiring entrepreneurs in the region with knowledge and expertise.
+                                    Once again, thank you for the invitation and I'm ready to lend my support to fulfil
+                                    E-Cell's vision.
+                                </div>
+                                <div class="slider-item-tri">
+                                    <img src="./assets/Assets2/tri.svg" alt="">
+                                </div>
+                                <div class="slider-item-info">
+                                    <div class="slider-item-info-profile">
+                                        <img class="slider-item-info-profile-img" src="./assets/abhay.png" alt="Kruti">
+                                    </div>
+                                    <div class="slider-item-info-profile-flex">
+                                        <div class="slider-item-info-profile-name">Dr Abhay Yadav</div>
+                                        <div class="slider-item-info-profile-desig">Angel Investor <br>Founder,
+                                            Mediversity</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-content">
+                            <div class="slider-content-item">
+                                <div class="slider-item-content">
+                                    The E-Cell Summit, organized by MANIT Bhopal students, was a remarkable event that
+                                    showcased professionalism, creativity, and hard work. The event was executed
+                                    flawlessly, with engaging sessions and a dedicated E-Cell MANIT team. The event
+                                    exemplified how students can create extraordinary things through collaboration,
+                                    setting an inspiring precedent for future endeavors.
+                                </div>
+                                <div class="slider-item-tri">
+                                    <img src="./assets/Assets2/tri.svg" alt="">
+                                </div>
+                                <div class="slider-item-info">
+                                    <div class="slider-item-info-profile">
+                                        <img class="slider-item-info-profile-img" src="./assets/kartik.png" alt="Kruti">
+                                    </div>
+                                    <div class="slider-item-info-profile-flex">
+                                        <div class="slider-item-info-profile-name">Kartik Vidyasagar</div>
+                                        <div class="slider-item-info-profile-desig">Angel Investor,<br>Odele</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    ...
+                </div>
+                <!-- <div class="swiper-pagination" style="margin-top: 2rem;"></div> -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+    </section>
+    <!-- slider ends -->
+
+
+    <!-- sponsor and partner section starts -->
+    <section id="sponsors" class="sponsor">
+        <div class="sponsor-part">
+            <h3 class="sponsor-part-head-one">Sponsors and Partners</h3>
+            <h2 class="sponsor-part-head-two">Meet Our Sponsors and Partners</h2>
+            <p class="sponsor-part-text">Grateful acknowledgment to our valued sponsors and partners whose unwavering
+                support powers the success of our e-summit experience.</p>
+            <div class="sponsor-image-container" id="all-sponsors-brands">
+                <!-- component below is kept for reference
+                     innerHTML of this parent component will be erased-off
+                    and will be populated by JavaScript at the runtime.
+                -->
+                <div class="sponsor-image-wrapper" data-sponsorname="adani">
+                    <a href="https://www.adani.com/"><img src="./assets/sponsor/adani.webp" alt="Sponsor"
+                            class="sponsor-image"></a>
+                </div>
+               
+            </div>
+            
+        </div>
+        <button id="spn-hide-btn">View More</button>
+        <!-- <div class="sponsor-part">
+            <h3 class="sponsor-part-head-one">Partners</h3>
+            <h2 class="sponsor-part-head-two">Meet Our Outreach Partners</h2>
+            <p class="sponsor-part-text">E-Cell NIT-B sincerely appreciates your support for our mission to incline the
+                nation towards an entrepreneurial India.</p>
+            <div class="sponsor-image-container">
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <img src="#" alt="Sponsor" class="sponsor-image">
+                </div>
+            </div>
+        </div> -->
+        <div class="sponsor-part">
+            <h3 class="sponsor-part-head-one">Media Partners</h3>
+            <h2 class="sponsor-part-head-two">Meet Our Media Partners</h2>
+            <p class="sponsor-part-text">E-Cell NIT-B sincerely appreciates your support for our mission to incline the
+                nation towards an entrepreneurial India.</p>
+            <div class="sponsor-image-container">
+                <div class="sponsor-image-wrapper">
+                    <a href="https://inshorts.com/"><img src="./assets/media/inshorts.jpg" alt="Sponsor"
+                            class="sponsor-image" ></a>
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <a href="https://www.redfmindia.in/delhi"><img src="./assets/media/redfm.png" alt="Sponsor"
+                            class="sponsor-image" ></a>
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <a href="https://www.campusvarta.com/"><img src="./assets/media/campusvarta.webp" alt="Sponsor"
+                            class="sponsor-image" ></a>
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <a href="https://www.ijb.business/"><img src="./assets/media/itsjustbusinessdaily.jpeg" alt="Sponsor"
+                            class="sponsor-image" ></a>
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <a href="https://theglobalhues.com/"><img src="./assets/media/theglobalhues.jpeg" alt="Sponsor"
+                            class="sponsor-image" ></a>
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <a href="https://www.bhopalsamachar.com/"><img src="./assets/media/bhopalsamachar.jpeg" alt="Sponsor"
+                            class="sponsor-image" ></a>
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <a href="https://techstory.in/"><img src="./assets/media/techstory.png" alt="Sponsor"
+                            class="sponsor-image" ></a>
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <a href="https://theblockopedia.com/"><img src="./assets/media/blockpedia.png" alt="Sponsor"
+                            class="sponsor-image"></a>
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <a href="https://startupnews.fyi/"><img src="./assets/media/startupnewsfyi.jpeg" alt="Sponsor"
+                            class="sponsor-image" ></a>
+                </div>
+                <div class="sponsor-image-wrapper">
+                    <a href="https://startuptalky.com/"><img src="./assets/media/startuptalky.png" alt="Sponsor"
+                            class="sponsor-image" ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sponsort and partner section ends -->
+    <div style="width: 100vw; overflow-x: hidden;">
+        <section id="mediacoverage" class="marquee2" style="
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0;
+    width: max-content;
+    height: 87vh;
+">
+            <img src="https://res.cloudinary.com/djjbjnrgl/image/upload/v1703884090/m1_tzkvxj.jpg" alt=""
+                style="height: inherit;">
+            <img src="https://res.cloudinary.com/djjbjnrgl/image/upload/v1703884089/m2_uqayja.jpg" alt="" style="
+    height: inherit;
+">
+        </section>
+    </div>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .marquee2 {
+            -moz-animation: scroll-left2 2s linear alternate infinite;
+            -webkit-animation: scroll-left2 2s linear alternate infinite;
+            animation: scroll-left2 20s linear alternate infinite;
+        }
+
+        @-moz-keyframes scroll-left2 {
+
+            100% {
+                -moz-transform: translateX(calc(-2*(9/16)*87vh));
+            }
+        }
+
+        @-webkit-keyframes scroll-left2 {
+
+            100% {
+                -webkit-transform: translateX(calc(-2*(9/16)*87vh));
+            }
+        }
+
+        @keyframes scroll-left2 {
+
+            100% {
+                -moz-transform: translateX(calc(-2*(9/16)*87vh));
+                -webkit-transform: translateX(calc(-2*(9/16)*87vh));
+                transform: translateX(calc(-2*(9/16)*87vh));
+            }
+        }
+    </style>
+    <!-- newsletter section start -->
+    <section class="newsletter">
+        <h2 class="newsletter-head">Subscribe our News Letter</h2>
+        <div class="newsletter-input-button-area">
+            <form id="subsform" style="
+            width: 100%;
+            height: 100%;
+            display: flex;
+        ">
+                <input type="text" style="flex-grow:1;" placeholder="Enter Your E-Mail" id="subs-email"
+                    class="newsletter-email-input">
+                <button class="newsletter-subscribe-button" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <!-- newsletter section end -->
+
+    <!-- footer section -->
+    <footer id="footer" class="footer">
+        <div class="footer-one">
+            <h2 class="footer-head footer-one-head">Contact Us</h2>
+            <div class="footer-one-contacts">
+                <div class="footer-contact-element contact-element-one">
+                    <img class="contact-element-image" src="assets/call.svg" alt="Call Icon">
+                    <div class="contact-element-text">+91 98972 25339</div>
+                </div>
+                <div class="footer-contact-element contact-element-two">
+                    <img class="contact-element-image" src="assets/email.svg" alt="Email Icon">
+                    <div class="contact-element-text">support@ecellnitb.in</div>
+                </div>
+                <div class="footer-contact-element contact-element-three">
+                    <img class="contact-element-image" src="assets/location.svg" alt="Location Icon">
+                    <div class="contact-element-text">
+                        Maulana Azad National Institute Of Technology, Bhopal
+                    </div>
+                </div>
+            </div>
+            <div class="footer-one-social">
+                <div class="footer-social-element">
+                    <a href="https://twitter.com/ecell_nitb" target="_blank" class="footer-social-link">
+                        <img src="/assets/twitter.svg" alt="Twitter" class="footer-social-image">
+                    </a>
+                </div>
+                <div class="footer-social-element">
+                    <a href="https://www.facebook.com/ecellnitbhopal/" class="footer-social-link" target="_blank">
+                        <img src="/assets/facebook.svg" alt="Facebook" class="footer-social-image">
+                    </a>
+                </div>
+                <div class="footer-social-element">
+                    <a href="https://www.instagram.com/ecell_nitb/" class="footer-social-link" target="_blank">
+                        <img src="/assets/instagram.svg" alt="Instagram" class="footer-social-image">
+                    </a>
+                </div>
+                <div class="footer-social-element">
+                    <a href="https://www.linkedin.com/company/ecell-manit" class="footer-social-link" target="_blank">
+                        <img src="/assets/linkedin.svg" alt="Linkedin" class="footer-social-image">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-two">
+            <h2 class="footer-head footer-two-head">Write to us</h2>
+            <form class="footer-form" id="fotform">
+                <div class="footer-input">
+                    <input type="text" name="name" id="foot-name" placeholder="Full Name">
+                </div>
+                <div class="footer-input">
+                    <input type="email" name="email" id="foot-email" placeholder="E-Mail">
+                </div>
+                <div class="footer-input">
+                    <textarea name="message" id="foot-message" rows="2" placeholder="Message"></textarea>
+                </div>
+                <br>
+                <div class="button-wrapper">
+                    <button class="footer-form-submit-button" type="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="footer-three">
+            <h2 class="footer-head footer-three-head">Instagram Feed</h2>
+            <div class="footer-three-posts">
+                <div class="instagram-posts">
+                    <a href="https://www.instagram.com/p/C1CJxQRN4Ho/">
+                        <img src="./assets/posts/startupexpo.webp" alt="E-Cell-Post" class="instagram-post-image">
+                    </a>
+                </div>
+                <div class="instagram-posts">
+                    <a href="https://www.instagram.com/p/C1EZxYyNsfk/">
+                        <img src="./assets/posts/Bplan.webp" alt="E-Cell-Post" class="instagram-post-image">
+                    </a>
+                </div>
+                <div class="instagram-posts">
+                    <a href="https://www.instagram.com/p/C1MqiRgNBd8/">
+                        <img src="./assets/posts/creatorscamp.webp" alt="E-Cell-Post" class="instagram-post-image">
+                    </a>
+                </div>
+                <div class="instagram-posts">
+                    <a href="https://www.instagram.com/p/C1HVWKzthMW/">
+                        <img src="./assets/posts/hackathon.webp" alt="E-Cell-Post" class="instagram-post-image">
+                    </a>
+                </div>
+                <div class="instagram-posts">
+                    <a href="https://www.instagram.com/p/C1RumWzNaTt/">
+                        <img src="./assets/posts/case.webp" alt="E-Cell-Post" class="instagram-post-image">
+                    </a>
+                </div>
+                <div class="instagram-posts">
+                    <a href="https://www.instagram.com/p/C1OhHRHNaJz/">
+                        <img src="./assets/posts/IPL.webp" alt="E-Cell-Post" class="instagram-post-image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- All script tags go here -->
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            // centeredSlides: true,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+
+            breakpoints: {
+                500: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 10,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                },
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+            autoplay: {
+                delay: 5000,
+            },
+
+
+        });
+        const swiper2 = new Swiper('#swiper2', {
+            direction: 'horizontal',
+            loop: true,
+            // Swiper options here
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+        swiper2.el.addEventListener('mouseenter', function () {
+            swiper2.autoplay.stop();
+        });
+
+        // Resume autoplay when not hovering
+        swiper2.el.addEventListener('mouseleave', function () {
+            swiper2.autoplay.start();
+        });
+    </script>
+    <script>
+        // const arr=document.querySelectorAll('.slider-content-item');
+        // const arr2=document.querySelectorAll('.swiper-slide');
+        // console.log(arr);
+        // console.log(window.innerWidth);
+        // if(window.innerWidth<700){
+        //     arr.forEach(item=>{
+        //         item.classList.add('swiper-slide');
+        //         item.classList.remove('slider-content-item');
+        //         console.log(item);
+        //     })
+        //     alert("hi");
+        //     console.log("hi");
+        //     arr2.forEach(item=>{
+        //         item.classList.remove('swiper-slide')
+        //     })
+        // }
+    </script>
+    <!-- <script>
+        $(function() {   
+         $('.countdown').final_countdown({
+                'start': 1362139200,
+                'end': 1388461320,
+                'now': 1387461319        
+            });
+        });
+        </script>
+        <script>
+             let days = document.getElementById('days');
+             let hours = document.getElementById('hours');
+             let minutes = document.getElementById('minutes');
+             let seconds = document.getElementById('seconds');
+
+             let dd = document.getElementById('dd');
+             let hh = document.getElementById('hh');
+             let mm = document.getElementById('mm');
+             let ss = document.getElementById('ss');
+
+             let day_dot = document.querySelector('.day_dot');
+             let hr_dot = document.querySelector('.hr_dot');
+             let min_dot = document.querySelector('.min_dot');
+             let sec_dot = document.querySelector('.sec_dot');
+
+             let endDate = '11/02/2024 00:00:00';
+
+             let x = setInterval(function(){
+             let now = new Date(endDate).getTime();
+             let countDown = new Date().getTime();
+             let distance =  now - countDown;
+
+             let d =365- Math.floor(distance / (1000 * 60 * 60 *24));
+             let h = Math.floor((distance % (1000 * 60 * 60 *24)) / (1000 * 60 * 60));
+             let m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60 ));
+             let s = Math.floor((distance % (1000 * 60 )) / (1000));
+
+             days.innerHTML = d + "<br><span>Days</span>";
+             hours.innerHTML = h + "<br><span>Hours</span>";
+             minutes.innerHTML = m + "<br><span>Minutes</span>";
+             seconds.innerHTML = s + "<br><span>Seconds</span>";
+
+             dd.style.strokeDashoffset = 440 - (440 * d) / 365;
+             hh.style.strokeDashoffset = 440 - (440 * h) / 24;
+             mm.style.strokeDashoffset = 440 - (440 * m) / 60;
+             ss.style.strokeDashoffset = 440 - (440 * s) / 60;
+             day_dot.style.transform = `rotateZ(${d * 0.986}deg`;
+             hr_dot.style.transform = `rotateZ(${h * 15}deg`;
+             min_dot.style.transform = `rotateZ(${m * 6}deg`;
+             sec_dot.style.transform = `rotateZ(${s * 6}deg`;
+
+             if(distance < 0){
+                clearInterval(x);
+                document.getElementById("time").style.display =
+                'none';
+                document.querySelector(".newYear").style.display =
+                'block';
+            }
+        }) 
+        let circles=document.querySelectorAll('.timer-circle');
+        circles.forEach(element => {
+            element.setAttribute("cx","70");
+            element.setAttribute("cy","70");
+            element.setAttribute("r","70");
+        });
+        </script> -->
+    <script src="./scripts/submit.js"></script>
+    <script src="./scripts/gallery.js"></script>
+    <script src="scripts/populate.js"></script>
+</body>
+
+</html>
