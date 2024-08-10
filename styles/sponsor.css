@@ -110,7 +110,7 @@ img.sponsor-image {
 
 
 
-@media screen and (min-width: 601px){
+@media screen and (min-width: 701px){
     #spn-hide-btn{
         display: none;
     }
@@ -123,7 +123,7 @@ img.sponsor-image {
     
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
     section.sponsor {
         padding: 6rem 4rem;
     }
@@ -131,7 +131,7 @@ img.sponsor-image {
         display: block;
     }
     #all-sponsors-brands {
-        height: 630px; /* Shorter height for smaller screens */
+        height: 640px; /* Shorter height for smaller screens */
         overflow: hidden;
     }
     
