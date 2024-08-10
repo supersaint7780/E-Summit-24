@@ -433,3 +433,38 @@ allSponsorsData.forEach(spn =>{
 })
 
 spnContainer.innerHTML += HTML_to_push; // push string to main container as HTML
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const viewMoreBtn = document.getElementById('spn-hide-btn');
+  const container = document.querySelector('#all-sponsors-brands');
+
+  let isContentVisible = false;
+
+  viewMoreBtn.addEventListener('click', function () {
+      if (isContentVisible) {
+        container.style.height = '630px'; 
+        container.style.overflow = 'hidden';  
+        viewMoreBtn.textContent = 'View More';
+          
+          
+      } else {
+        container.style.height = 'auto'; 
+          container.style.overflow = 'visible';
+          viewMoreBtn.textContent = 'View Less';
+       
+          
+      }
+      isContentVisible = !isContentVisible;
+  });
+
+
+});
+
+
+
+
+
+
+
+

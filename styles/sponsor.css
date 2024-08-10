@@ -7,6 +7,8 @@ section.sponsor {
     flex-direction: column;
     gap: 8rem;
     padding: 6rem 10rem;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -83,8 +85,56 @@ img.sponsor-image {
     object-fit: contain; /* ensures that images fits according to aspect ration of itself and the parent container */
 }
 
+#spn-hide-btn{
+    background: transparent;
+    border: 1.5px solid #D99343;
+    border-radius: 0.75rem;
+    width: 12.35713rem;
+    height: 3.925rem;
+    color: #CB8A3F;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 0.9995rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.0825rem;
+
+}
+
+#spn-hide-btn:hover{
+    background-color: #D99343;
+    color: white;
+}
+
+
+
+
+@media screen and (min-width: 601px){
+    #spn-hide-btn{
+        display: none;
+    }
+
+    #all-sponsors-brands {
+        height: auto; /* Default height for larger screens */
+        overflow: visible;
+    }
+
+    
+}
+
 @media screen and (max-width:600px) {
     section.sponsor {
         padding: 6rem 4rem;
     }
+    #spn-hide-btn{
+        display: block;
+    }
+    #all-sponsors-brands {
+        height: 630px; /* Shorter height for smaller screens */
+        overflow: hidden;
+    }
+    
 }
+
+
